@@ -10,18 +10,19 @@ export const CustomButtonWrapperStyled = styled(Button)`
     background-color: ${primaryColors.black};
     color: ${primaryColors.white};
     border: 1px solid ${primaryColors.black};
-    padding: 5xp 10px;
+    padding: 9px 20px;
 
     &:hover{
-        background-color: transparent;
+        background-color: ${primaryColors.white};
         color: ${primaryColors.black};
+        border-color:  ${primaryColors.white};
     }
 }
 &.cmnWhiteBtn{
     background-color: ${primaryColors.white};
     color: ${primaryColors.black};
     border: 1px solid ${primaryColors.white};
-    padding: 5xp 10px;
+    padding: 9px 20px;
 
     &:hover{
         background-color: transparent;
@@ -31,14 +32,10 @@ export const CustomButtonWrapperStyled = styled(Button)`
 
 
 `
-interface props {
-    children: React.ReactNode;
-    className?: string;
-    buttonType?: "white" | "black";
-}
+
 const CustomButton = ({children, className, buttonType}:props) => {
   return (
-    <CustomButtonWrapperStyled      className={`${buttonType === "white" ? "cmnWhiteBtn" : "cmnBlackBtn"} ${className || ""
+    <CustomButtonWrapperStyled  className={`${buttonType === "white" ? "cmnWhiteBtn" : "cmnBlackBtn"} ${className || ""
   }`}>
         {children}
     </CustomButtonWrapperStyled>

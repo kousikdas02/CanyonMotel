@@ -1,6 +1,6 @@
 import React from 'react'
 import { FooterWrapperStyled } from '../../styles/styledComponents/FooterWrapperStyled'
-import { Box, Container, List, ListItem } from '@mui/material'
+import { Box, Container, List, ListItem, Stack } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { assets } from '../../json/assets'
 import Typography from "@mui/material/Typography";
@@ -34,26 +34,29 @@ const Footer = () => {
       <Container fixed>
         <Box className="footerTop">
           <Box className="footerTopRow">
-            <Box className="footerTopCol">
+            <Box className="footerTopCol footerTopLogoCol">
               <Link to="/" className='footerLogo'>
                 <img src={assets.logo} alt="header logo" />
               </Link>
             </Box>
-            <Box className="footerTopCol">
+            <Box className="footerTopCol footerTopColPadding footerTopLocationContactCol">
               <Typography variant='body1' className="footerTitle">OUR LOCATION</Typography>
-              <Typography variant='body1'>1103 Maple St, Bandera TX, 78003</Typography>
-              <List>
+              <Typography variant='body1' className='footerLocationDetails'>Teton Court Motel
+                123 E Magnolia Street
+                Pinedale, WY 82941
+                </Typography>
+              <List disablePadding className='footerConactLinkList'>
                 <ListItem>
-                  <Link to="tel:1234567890"><CallIcon /> 1234567890</Link>
+                  <Link to="tel:(307) 367-3367"><i><CallIcon /></i> (307) 367-3367</Link>
                 </ListItem>
                 <ListItem>
-                  <Link to="mailto:test@gmail.com"><EmailIcon /> test@gmail.com</Link>
+                  <Link to="mailto:res@tetoncourt.com"><i><EmailIcon /></i> res@tetoncourt.com</Link>
                 </ListItem>
               </List>
             </Box>
-            <Box className="footerTopCol">
+            <Box className="footerTopCol footerTopColPadding footerTopSitemapCol">
               <Typography variant='body1' className="footerTitle">SITE MAP</Typography>
-              <List>
+              <List disablePadding className='footerSiteMapList'>
                 {
                   foooterSiteMaop.map((item, index) => {
                     return (
@@ -65,10 +68,10 @@ const Footer = () => {
                 }
               </List>
             </Box>
-            <Box className="footerTopCol">
+            <Box className="footerTopCol footerTopColPadding footerTopSocialCol">
               <Typography variant='body1' className="footerTitle">HOURS</Typography>
               <Typography variant='body1'>Our reservation and front desk team are available daily from 9am to 6pm CST.</Typography>
-              <CustomButton buttonType='white'>
+              <CustomButton buttonType='white' className='footerBookBtn'>
                 BOOK ONLINE
               </CustomButton>
 
@@ -81,7 +84,31 @@ const Footer = () => {
           </Box>
         </Box>
 
-        <Box className="footerBot"></Box>
+        <Box className="footerBot">
+          <Stack className='footerBotRow' direction="row" flexWrap={"wrap"} justifyContent="space-between" spacing={2}>
+              <Box className="footerBotLeft">
+                <List disablePadding>
+                  <ListItem>
+                    &copy; 2024 <Link to="/">Teton Court Motel.</Link> All rights reserved.
+                  </ListItem>
+                </List>
+              </Box>
+              <Box className="footerBotRight">
+                <List disablePadding>
+                  <ListItem>
+                    <Link to="#">
+                      Terms & Conditions
+                    </Link>
+                  </ListItem>
+                  <ListItem>
+                    <Link to="#">
+                      Privacy & Cookie Statement
+                    </Link>
+                  </ListItem>
+                </List>
+              </Box>
+          </Stack>
+        </Box>
 
       </Container>
     </FooterWrapperStyled>
