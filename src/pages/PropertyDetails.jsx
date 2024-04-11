@@ -3,6 +3,7 @@ import { PropertyDetailsWrapperStyled } from '../styles/styledComponents/Propert
 import Wrapper from '../layout/Wrapper/Wrapper'
 import CommonInnerBanner from '../components/CommonInnerBanner/CommonInnerBanner'
 import OurRoom from '../components/OurRooms'
+import OurRoomTypes from '../components/OurRoomTypes'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
@@ -32,7 +33,25 @@ const PropertyDetails = () => {
                 </Grid>
               </Box>
           </Box>
-          <OurRoom/>          
+          <OurRoom/>   
+          <OurRoomTypes/>   
+          <Box className="our-policies-wrap">
+              <Box className="cmn_head">
+                <Typography variant='h2'>OUR POLICIES</Typography>
+                <Box className="cowboy-deails-text">
+                 
+                </Box>
+              </Box>
+          </Box>   
+
+          <Box className="faq-question-wrap">
+              <Box className="cmn_head">
+                <Typography variant='h2'>FREQUENTLY ASKED QUESTIONS</Typography>
+                <Box className="cowboy-deails-text">
+                  
+                </Box>
+              </Box>
+          </Box>        
       </PropertyDetailsWrapperStyled>
     </Wrapper>
     
