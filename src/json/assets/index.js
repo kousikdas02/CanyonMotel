@@ -7,6 +7,7 @@ export const assets = {
     roomspic2 : "/assets/images/roomspic2.jpg",
     roomspic3 : "/assets/images/roomspic3.jpg",
     roomspic4 : "/assets/images/roomspic4.jpg",
+    highlights3:"/assets/images/highlights3.jpg",
 
 
 }

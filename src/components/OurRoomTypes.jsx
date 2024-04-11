@@ -8,6 +8,7 @@ const OurRoomTypes = () => {
   return (
 
     <Box className="our-room-types-wrp">
+        <Typography variant='h2'>OUR ROOM TYPES</Typography>
         <Box className="container">
             <Grid className="our-room-types-wrp-first" container spacing={2}>
                 <Grid item xs={6}>
