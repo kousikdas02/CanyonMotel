@@ -85,7 +85,7 @@ const Activities = () => {
       <Helmet>
         <title>{TITLE}</title>
       </Helmet>
-      <ActivitiesWrapperStyled>
+      <ActivitiesWrapperStyled style={{ background: `url(${assets.activityBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
         <CommonInnerBanner innerBannerImage={assets.activitiyBanner} innerBannerText="THINGS TO DO IN BANDERA, TEXAS" />
         <Box className="activityWrap">
           {

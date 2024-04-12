@@ -41,6 +41,7 @@ export const assets = {
     activitiy3: "/assets/images/activitiy3.webp",
     activitiy4: "/assets/images/activitiy4.webp",
     activitiy5: "/assets/images/activitiy5.webp",
+    activityBg: "/assets/images/activityBg.jpg",
 
 }
 
