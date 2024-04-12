@@ -95,9 +95,13 @@ background-color: ${primaryColors.black};
                             background-color: ${primaryColors.white};
                             transition: 0.3s all ease;
                         }
-
+                        &.active{
+                            &::after{
+                                width: 100%;
+                            }
+                        }
                         &:hover{
-                            &::after, &.footerActive{
+                            &::after{
                                 width: 100%;
                             }
                         }

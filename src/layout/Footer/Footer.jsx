@@ -1,7 +1,7 @@
 import React from 'react'
 import { FooterWrapperStyled } from '../../styles/styledComponents/FooterWrapperStyled'
 import { Box, Container, List, ListItem, Stack } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link, NavLink, } from 'react-router-dom'
 import { assets } from '../../json/assets'
 import Typography from "@mui/material/Typography";
 import CallIcon from '@mui/icons-material/Call';
@@ -61,7 +61,7 @@ const Footer = () => {
                   foooterSiteMaop.map((item, index) => {
                     return (
                       <ListItem key={index}>
-                        <Link to={item.path}>{item.name}</Link>
+                        <NavLink activeClassName="active" to={item.path}>{item.name}</NavLink>
                       </ListItem>
                     )
                   })
