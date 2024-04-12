@@ -7,6 +7,7 @@ AOS.init({
   duration: 1200,
   easing: 'ease',
   delay: 100,
+  once: true,
 });
 
 
