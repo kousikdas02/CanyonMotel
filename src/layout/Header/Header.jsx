@@ -1,24 +1,20 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React, {  useEffect, useState } from 'react'
 import { HeaderWrapperStyled } from '../../styles/styledComponents/HeaderWrapperStyled'
-import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import { Container } from '@mui/material'
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { assets } from '../../json/assets';
-const Header = (props) => {
+const Header = () => {
   const drawerWidth = 240;
   const navItems = [
     {
@@ -74,7 +70,7 @@ const Header = (props) => {
   const [scroll, setScroll] = useState(false);
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      setScroll(window.scrollY > 80);
+      setScroll(window.scrollY > 150);
     });
   }, []);
   return (
@@ -103,14 +99,14 @@ const Header = (props) => {
           <Box className="headerMenu" sx={{ display: { xs: 'none', sm: 'block' } }}>
             <List>
               <ListItem>
-                <Link to="/cabins">
+                <NavLink  activeClassName="active" to="/cabins">
                   Cabins
-                </Link>
+                </NavLink >
               </ListItem>
-              <ListItem><Link to="/property-details">Property Details</Link></ListItem>
-              <ListItem><Link to="/" className='headerLogo'><img src={assets.logo} alt="header logo" /></Link></ListItem>
-              <ListItem><Link to="/contact-us">Contact Us</Link></ListItem>
-              <ListItem><Link to="/activities">Activities</Link></ListItem>
+              <ListItem><NavLink  activeClassName="active" to="/property-details">Property Details</NavLink ></ListItem>
+              <ListItem><NavLink  activeClassName="active" to="/" className='headerLogo'><img src={assets.logo} alt="header logo" /></NavLink ></ListItem>
+              <ListItem><NavLink  activeClassName="active" to="/contact-us">Contact Us</NavLink ></ListItem>
+              <ListItem><NavLink  activeClassName="active" to="/activities">Activities</NavLink ></ListItem>
             </List>
            
           </Box>

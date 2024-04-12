@@ -9,9 +9,11 @@
     outline: 0;
     box-sizing: border-box;
   }
-  
+  html {
+    scroll-behavior: smooth;
+  }
   body {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     font-family: "Raleway", sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -59,10 +61,12 @@ h5,
 h6 {
   &.MuiTypography-root{
     padding: 0;
-    margin: 0;
+    margin: 0 0 10px;
     color: #000;
     font-family: "Yeseva One", serif;
-
+    &:last-child{
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -75,7 +79,24 @@ h1 {
 
   }
 }
+h2 {
+  
+  &.MuiTypography-root{
+    line-height: 1;
+    font-weight: 400;
+  }
+}
+p{
+  &.MuiTypography-root{
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 10px;
+    font-size: 18px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
 
+}
 p:last-child {
   margin-bottom: 0;
 }
@@ -138,19 +159,23 @@ select[multiple] {
 }
 
 ::-webkit-input-placeholder {
-  color: #4b8a98;
+  color: #000;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
-  color: #4b8a98;
+  color: #000;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
-  color: #4b8a98;
+  color: #000;
+  opacity: 1;
 }
 
 :-moz-placeholder {
-  color: #4b8a98;
+  color: #000;
+  opacity: 1;
 }
 
 input[type="button"],
@@ -206,12 +231,98 @@ input[type="submit"]:hover {
 
 // common heading
 .cmn_head {
-  margin-bottom: 50px;
+  margin-bottom: 15px;
   text-align: center;
 
   h2 {
     font-size: 40px;
     text-transform: none;
     color: #202020;
+    margin-bottom: 15px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  h3{
+    font-size: 24px;
+  }
+}
+
+.newsLetterModal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 400px;
+  background-color: #ffffff;
+  box-shadow: 24px;
+  padding: 50px 50px 50px;
+  text-align: center;
+  border-radius: 15px;
+
+  h4{
+    margin-bottom: 10px;
+  }
+  h6{
+    max-width: 350px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .newsLetterModalInput {
+    width: 100%;
+    margin-bottom: 20px;
+    input{
+      height: 35px;
+      padding: 5px 20px;
+      border-color: #000;
+      &::-webkit-input-placeholder {
+        color: #000;
+        opacity: 1;
+      }
+      
+      &::-moz-placeholder {
+        color: #000;
+        opacity: 1;
+      }
+      
+      &:-ms-input-placeholder {
+        color: #000;
+        opacity: 1;
+      }
+      
+      &:-moz-placeholder {
+        color: #000;
+        opacity: 1;
+      }
+    }
+    fieldset{
+      display: none;
+    }
+    
+  }
+  .newsLetterModalCloseBtn{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #000;
+    z-index: 1;
+    padding: 0;
+    min-width: initial;
+    line-height: 1;
+    font-size: 20px;
+    font-weight: 600;
+    &:hover{
+      opacity: 0.6;
+    }
+  }
+}
+
+// fluid container
+.MuiContainer-maxWidthXl{
+  &.MuiContainer-root{
+    padding-left: 40px;
+    padding-right: 40px;
+
   }
 }

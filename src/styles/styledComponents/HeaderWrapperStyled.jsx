@@ -23,6 +23,10 @@ export const HeaderWrapperStyled = styled(Box)`
                         &::after{
                             background-color: ${primaryColors.black};
                         }
+
+                        &.headerLogo{
+                            width: 200px;
+                        }
                     }
                 }
             }
@@ -69,9 +73,9 @@ export const HeaderWrapperStyled = styled(Box)`
                     background-color: ${primaryColors.white};
                     transition: 0.3s all ease;
                 }
-
-                &:hover{
-                    &::after, &.footerActive{
+              
+                &:hover, &.active{
+                    &::after{
                         width: 100%;
                     }
                 }

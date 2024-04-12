@@ -1,4 +1,4 @@
-import { PaletteMode, PaletteOptions } from "@mui/material";
+
 export const primaryColors = {
   primary: "#4B8A98",
   primary1: "#896446",

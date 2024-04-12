@@ -32,4 +32,36 @@ z-index: 1;
         text-transform: uppercase;
     }
 }
+.bannerCalendar{
+    padding-top: 30px;
+    .bannerCalendarStack{
+        .bannerCalendarInput{
+            label{
+                display: block;
+                color: ${primaryColors.white};
+                margin-bottom: 5px;
+            }
+            fieldset{
+                display: none;
+            }
+            .MuiInputBase-root {
+                line-height: 1;
+                input{
+                    border: 2px solid ${primaryColors.white};
+                    max-height: 44px;
+                    padding: 10.5px 15px;
+                    line-height: 1;
+                    height: initial;
+                    color: ${primaryColors.white};
+                }
+            }
+        }
+    }
+    .homeBannerBookBtn{
+        &:hover{
+            background-color: ${primaryColors.white};
+            border-color: ${primaryColors.white};
+        }
+    }
+}
 `

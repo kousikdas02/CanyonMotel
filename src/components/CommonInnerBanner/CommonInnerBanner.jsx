@@ -1,19 +1,20 @@
 import React from 'react'
 import { CommonInnerBannerWrapperStyled } from '../../styles/styledComponents/CommonInnerBannerWrapperStyled'
-import { Typography } from '@mui/material'
-import { assets } from '../../json/assets';
+import { Container, Typography } from '@mui/material'
 import Box from '@mui/material/Box';
 
-const CommonInnerBanner = () => {
+const CommonInnerBanner = ({innerBannerImage, innerBannerText}) => {
   return (
     <CommonInnerBannerWrapperStyled>
-      <Box className="inner-banner">
+      <Box className="innerBanner">
         <Box className="container">
             <figure>
-              <img src={assets.propertyDetails} alt="property details"/>
+              <img src={innerBannerImage} alt="property details"/>
             </figure>
-            <Box className="inner-banner-details">
-              <Typography variant='h1'>Property details</Typography>
+            <Box className="innerBannerDetails">
+              <Container fixed>
+                <Typography variant='h1'>{innerBannerText}</Typography>
+              </Container>
             </Box>
         </Box>
       </Box>
