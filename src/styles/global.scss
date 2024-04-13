@@ -25,7 +25,14 @@
     overflow-x: hidden;
     font-weight: 400;
     color: #000;
-    padding-top: 111px;
+    padding-top: 110px;
+
+    @media (max-width: 899px) {
+      padding-top: 89px;
+    }
+    @media (max-width: 599px) {
+      padding-top: 81px;
+    }
 
   }
 
@@ -76,6 +83,12 @@ h1 {
     font-size: 48px;
     line-height: 1.1;
     font-weight: 400;
+    @media (max-width: 1199px) {
+      font-size: 45px;
+    }
+    @media (max-width: 899px) {
+      font-size: 36px;
+    }
 
   }
 }
@@ -242,6 +255,13 @@ input[type="submit"]:hover {
     &:last-child{
       margin-bottom: 0;
     }
+
+    @media (max-width: 1199px) {
+      font-size: 35px;
+    }
+    @media (max-width: 899px) {
+      font-size: 30px;
+    }
   }
 
   h3{
@@ -324,5 +344,45 @@ input[type="submit"]:hover {
     padding-left: 40px;
     padding-right: 40px;
 
+  }
+}
+
+.mobileMenuDrawer{
+  padding: 40px 20px;
+
+  ul{
+    padding: 0;
+    margin: 0;
+    li{
+      padding: 0;
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+      a{
+        line-height: 1;
+        color: #000;
+        padding-bottom: 2px;
+
+        &:hover, &.active{
+          color: #613F35;
+          border-bottom: 1px solid #613F35;
+        }
+      }
+    }
+  }
+  .mobileMenuDrawerCloseBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #613F35;
+    padding: 0;
+    min-width: initial;
+    z-index: 9;
+    line-height: 1;
+    font-weight: 600;
+    &:hover{
+      opacity: 0.5;
+    }
   }
 }

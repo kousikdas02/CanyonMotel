@@ -3,10 +3,11 @@ import { ActivitiesWrapperStyled } from '../styles/styledComponents/ActivitiesWr
 import Wrapper from '../layout/Wrapper/Wrapper'
 import { assets } from '../json/assets'
 import CommonInnerBanner from '../components/CommonInnerBanner/CommonInnerBanner'
+// eslint-disable-next-line no-unused-vars
 import NewsLetter from '../components/NewsLetter/NewsLetter'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import CustomButton from '../ui/CustomButton/CustomButton'
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 export const activityData = [
   {
@@ -82,9 +83,11 @@ const TITLE = 'Teton Court Motel - Activities';
 const Activities = () => {
   return (
     <Wrapper>
-      <Helmet>
-        <title>{TITLE}</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+      </HelmetProvider>
       <ActivitiesWrapperStyled style={{ background: `url(${assets.activityBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
         <CommonInnerBanner innerBannerImage={assets.activitiyBanner} innerBannerText="THINGS TO DO IN BANDERA, TEXAS" />
         <Box className="activityWrap">
@@ -112,7 +115,7 @@ const Activities = () => {
                             })
                           }
                         </Box>
-                        <CustomButton buttonType="black" onClick={() => window.open(`${eachData.linkPath}`, '_blank')}>
+                        <CustomButton buttonColor="black" onClick={() => window.open(`${eachData.linkPath}`, '_blank')}>
                           LEARN MORE
                         </CustomButton>
                       </Box>
@@ -124,7 +127,7 @@ const Activities = () => {
             ))
           }
         </Box>
-        <NewsLetter />
+        {/* <NewsLetter /> */}
       </ActivitiesWrapperStyled>
     </Wrapper>
   )

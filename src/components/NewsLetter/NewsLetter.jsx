@@ -13,7 +13,7 @@ const NewsLetter = () => {
             <Container fixed>
                 <Stack direction="row" spacing={4} alignItems="center" justifyContent="center">
                     <Typography variant='h5'>CLICK HERE TO RECEIVE OUR NEWSLETTER</Typography>
-                    <CustomButton buttonType="black" onClick={handleOpen}>
+                    <CustomButton buttonColor="black" onClick={handleOpen}>
                         SIGN UP
                     </CustomButton>
                 </Stack>
@@ -41,7 +41,7 @@ const NewsLetter = () => {
                         </Typography>
                         <Typography variant='h6'>Sign up for our mailing list & get the latest news and updates</Typography>
                         <TextField className='newsLetterModalInput' variant="outlined" placeholder='Enter your email' />
-                        <CustomButton buttonType="black" onClick={handleOpen}>
+                        <CustomButton buttonColor="black" onClick={handleOpen}>
                             SUBMIT
                         </CustomButton>
                     </Box>

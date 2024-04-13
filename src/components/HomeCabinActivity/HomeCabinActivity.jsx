@@ -9,19 +9,19 @@ const HomeCabinActivity = () => {
     const navigate = useNavigate();
   return (
     <HomeCabinActivityStyled className='cmn_gap cmn_gap_btm'>
-        <Grid container columnSpacing={2.5}>
-            <Grid item md={6} xs={6} data-aos="fade-right">
+        <Grid container columnSpacing={2.5} rowSpacing={4}>
+            <Grid item md={6} xs={12} data-aos="fade-right">
                 <Box className="homeCabinActivityCard" style={{backgroundImage: `url(${assets.homeCabinActivityCabin})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
                     <Typography variant="h2">CABINS</Typography>
-                    <CustomButton buttonType="black" varient="hoverWhite"  onClick={() => navigate('/cabins')}>
+                    <CustomButton buttonColor="black" varient="hoverWhite"  onClick={() => navigate('/cabins')}>
                         LEARN MORE
                     </CustomButton>
                 </Box>
             </Grid>
-            <Grid item md={6} xs={6} data-aos="fade-left">
+            <Grid item md={6} xs={12} data-aos="fade-left">
                 <Box className="homeCabinActivityCard" style={{backgroundImage: `url(${assets.homeCabinActivityActivities})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
                     <Typography variant="h2">ACTIVITIES</Typography >
-                    <CustomButton buttonType="black" varient="hoverWhite" onClick={() => navigate('/activities')} >
+                    <CustomButton buttonColor="black" varient="hoverWhite" onClick={() => navigate('/activities')} >
                         LEARN MORE
                     </CustomButton>
                 </Box>

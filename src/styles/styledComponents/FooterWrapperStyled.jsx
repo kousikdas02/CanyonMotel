@@ -7,29 +7,65 @@ export const FooterWrapperStyled = styled(Box)`
 background-color: ${primaryColors.black};
 
 .footerTop{
-    padding: 50px 0 30px;
+    padding: 50px 0 40px;
     border-bottom: 1px solid ${primaryColors.white};
     .footerTopRow{
         display: flex;
         flex-wrap: wrap;
         margin: 0 -15px;
+        @media (max-width: 1199px) {
+            justify-content: space-between;
+            margin-bottom: -30px;
+        }
         .footerTopCol {
             padding: 0 15px;
             flex: 0 0 auto;
+            @media (max-width: 1199px) {
+                margin-bottom: 30px;
+            }
+            @media (max-width: 599px) {
+                text-align: center;
+            }
             &.footerTopColPadding{
                 padding-top: 20px;
+                @media (max-width: 1199px) {
+                    padding-top: 0;
+                }
             }
             &.footerTopLogoCol{
                 width: 29%;
+                @media (max-width: 1199px) {
+                    width: 100%;
+                    text-align: center;
+                }
+                
             }
             &.footerTopLocationContactCol{
                 width: 32%;
+                @media (max-width: 1199px) {
+                    width: calc(100% / 3);
+                }
+                @media (max-width: 599px) {
+                    width: 100%;
+                }
             }
             &.footerTopSitemapCol{
                 width: 15%;
+                @media (max-width: 1199px) {
+                    width: calc(100% / 3);
+                }
+                @media (max-width: 599px) {
+                    width: 100%;
+                }
             }
             &.footerTopSocialCol{
                 width: 24%;
+                @media (max-width: 1199px) {
+                    width: calc(100% / 3);
+                }
+                @media (max-width: 599px) {
+                    width: 100%;
+                }
             }
             .footerLogo{
                 width: 300px;
@@ -46,6 +82,10 @@ background-color: ${primaryColors.black};
                 }
                 &.footerLocationDetails{
                     max-width: 250px;
+
+                    @media (max-width: 899px) {
+                        max-width: initial;
+                    }
                 }
 
             }
@@ -53,6 +93,9 @@ background-color: ${primaryColors.black};
                 li{
                     padding: 0;
                     margin-bottom: 7px;
+                    @media (max-width: 599px) {
+                        justify-content: center;
+                    }
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -75,6 +118,10 @@ background-color: ${primaryColors.black};
                 padding: 0;
                 li{
                     margin-bottom: 7px;
+
+                    @media (max-width: 599px) {
+                        justify-content: center;
+                    }
                     &:last-child{
                         margin-bottom: 0;
                     }
@@ -112,8 +159,16 @@ background-color: ${primaryColors.black};
                 margin-bottom: 15px;
             }
             .footerSocialList{
+                display: flex;
+                align-items: center;
+                margin: 0 -10px;
+
+                @media (max-width: 599px) {
+                    justify-content: center;
+                }
                 li{
-                    padding: 0;
+                    padding: 0 10px;
+                    width: initial;
                     a{
                         border: 2px solid ${primaryColors.white};
                         border-radius: 100%;
@@ -136,16 +191,34 @@ background-color: ${primaryColors.black};
 }
 .footerBot{
     padding: 30px 0 50px;
+    .footerBotRow {
+        @media (max-width: 1199px) {
+            justify-content: center;
+            .footerBotRight {
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+            .footerBotLeft {
+                order: 1;
+            }
+        }
+    }
     ul{
         margin: 0 -15px -10px;
         display: flex;
         flex-wrap: wrap;
+        @media (max-width: 899px) {
+            justify-content: center;
+        }
         li{
             width: initial;
             padding: 0 15px;
             margin-bottom: 10px;
             display: block;
             color: ${primaryColors.white};
+            @media (max-width: 899px) {
+                text-align: center;
+            }
             a{
                 color: ${primaryColors.white};
                 &:hover{

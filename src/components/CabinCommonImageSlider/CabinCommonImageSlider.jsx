@@ -20,7 +20,7 @@ const CabinCommonImageSlider = ({cabinImageSliderList}) => {
           <Slider {...settings}>
             {
                 cabinImageSliderList?.map((item, index) => (
-                    <Box className="cabinImageSliderEach">
+                    <Box className="cabinImageSliderEach" key={index}>
                         <img src={item} key={index} alt="Cabin" />
                     </Box>
                 ))

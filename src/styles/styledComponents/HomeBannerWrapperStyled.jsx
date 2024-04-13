@@ -5,6 +5,12 @@ export const HomeBannerWrapperStyled =  styled(Box)`
 padding: 200px 0;
 position: relative;
 z-index: 1;
+@media (max-width: 1199px) {
+    padding: 120px 0;
+}
+@media (max-width: 899px) {
+    padding: 80px 0;
+}
 &::before{
     position: absolute;
     content: "";
@@ -30,12 +36,29 @@ z-index: 1;
         font-weight: 400;
         font-family: "Old Standard TT", serif;
         text-transform: uppercase;
+        line-height: 1.2;
+        @media (max-width: 899px) {
+            font-size: 25px;
+        }
     }
 }
 .bannerCalendar{
     padding-top: 30px;
+    @media (max-width: 899px) {
+        padding-top: 15px;
+    }
     .bannerCalendarStack{
+        @media (max-width: 899px) {
+            flex-wrap: wrap;
+        }
         .bannerCalendarInput{
+            @media (max-width: 899px) {
+                width: 48%;
+            }
+            @media (max-width: 599px) {
+                width: 100%;
+                margin: 0 0 15px;
+            }
             label{
                 display: block;
                 color: ${primaryColors.white};
@@ -44,8 +67,12 @@ z-index: 1;
             fieldset{
                 display: none;
             }
+            .MuiTextField-root{
+                width: 100%;
+            }
             .MuiInputBase-root {
                 line-height: 1;
+                
                 input{
                     border: 2px solid ${primaryColors.white};
                     max-height: 44px;
@@ -55,6 +82,17 @@ z-index: 1;
                     color: ${primaryColors.white};
                 }
             }
+        }
+    }
+    .bannerCalendarSubmit{
+        @media (max-width: 899px) {
+            width: 100%;
+            margin-left: 0;
+            text-align: center;
+            padding-top: 20px;
+        }
+        @media (max-width: 599px) {
+            padding-top: 0;
         }
     }
     .homeBannerBookBtn{

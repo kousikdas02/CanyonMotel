@@ -8,6 +8,10 @@ export const HomeCabinActivityStyled = styled(Box)`
     position: relative;
     z-index: 1;
     text-align: center;
+
+    @media (max-width: 899px) {
+        padding: 120px 30px;
+    }
    
     &::before{
         position: absolute;
@@ -21,8 +25,14 @@ export const HomeCabinActivityStyled = styled(Box)`
     }
     h2{
         font-size: 36px;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
         color: ${primaryColors.white};
+        @media (max-width: 1199px) {
+            font-size: 35px;
+        }
+        @media (max-width: 899px) {
+            font-size: 30px;
+        }
     }
 }
 ` 

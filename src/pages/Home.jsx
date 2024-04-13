@@ -11,18 +11,21 @@ import Testimonial from '../components/Testimonial/Testimonial'
 import HomeContact from '../components/HomeContact/HomeContact'
 import HomeGallery from '../components/HomeGallery/HomeGallery'
 import OurLocation from '../components/OurLocation/OurLocation'
+// eslint-disable-next-line no-unused-vars
 import NewsLetter from '../components/NewsLetter/NewsLetter'
 import { assets } from '../json/assets'
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const TITLE = 'Teton Court Motel - Home';
 
 const Home = () => {
   return (
     <Wrapper>
-      <Helmet>
-        <title>{TITLE}</title>
-      </Helmet>
+     <HelmetProvider>
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+      </HelmetProvider>
       <HomeWrapperStyled style={{ background: `url(${assets.homeBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
         <HomeBanner />
         <HomeMotelInfo />
@@ -34,7 +37,7 @@ const Home = () => {
         <HomeContact />
         <HomeGallery />
         <OurLocation />
-        <NewsLetter />
+        {/* <NewsLetter /> */}
       </HomeWrapperStyled>
 
     </Wrapper>

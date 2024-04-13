@@ -5,9 +5,12 @@ import CommonInnerBanner from '../components/CommonInnerBanner/CommonInnerBanner
 import { assets } from '../json/assets'
 import { Box, Container, Grid, List, ListItem, Typography } from '@mui/material'
 import CustomButton from '../ui/CustomButton/CustomButton'
+// eslint-disable-next-line no-unused-vars
 import NewsLetter from '../components/NewsLetter/NewsLetter'
 import CabinCommonImageSlider from '../components/CabinCommonImageSlider/CabinCommonImageSlider'
-import { Helmet } from 'react-helmet'
+import { Helmet, HelmetProvider } from 'react-helmet-async'
+
+
 
 const cabinData = [
   {
@@ -192,9 +195,11 @@ const TITLE = 'Teton Court Motel - Cabins';
 const Cabins = () => {
   return (
     <Wrapper>
-      <Helmet>
-        <title>{TITLE}</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <title>{TITLE}</title>
+        </Helmet>
+      </HelmetProvider>
       <CabinsWrapperStyled style={{ background: `url(${assets.cabinBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
         <CommonInnerBanner innerBannerImage={assets.cabinBanner} innerBannerText="CABINS" />
         <Box className="eachCabinWrap">
@@ -228,7 +233,7 @@ const Cabins = () => {
                             }
                           </List>
                           <Typography variant='body1' className='personPerRoom'><b>Occupancy:</b> {cabin.persons}</Typography>
-                          <CustomButton buttonType="black">
+                          <CustomButton buttonColor="black" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
                             BOOK NOW
                           </CustomButton>
                         </Grid>
@@ -242,7 +247,7 @@ const Cabins = () => {
           }
 
         </Box>
-        <NewsLetter />
+        {/* <NewsLetter /> */}
 
 
       </CabinsWrapperStyled>

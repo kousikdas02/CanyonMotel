@@ -2,12 +2,12 @@ import { styled } from "@mui/material/styles";
 import { primaryColors } from '../../mui-theme/_muiPalette';
 import Box from '@mui/material/Box';
 export const HomeReasonToBookWrapperStyled = styled(Box)`
-background-color: rgba(255,255,255,0.8);
+background-color: rgba(255,255,255,0.85);
 .bookReason{
     padding-top: 20px;
     .bookReasonCard{
         text-align: center;
-        padding: 30px 15px;
+        padding: 30px 30px;
         position: relative;
         z-index: 1;
         &.hasBackdrop{

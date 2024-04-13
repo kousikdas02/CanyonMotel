@@ -7,14 +7,19 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const HeaderWrapperStyled = styled(Box)`
   .headerContainer {
-    background-color: ${primaryColors.black} !important;
+    background-color: ${primaryColors.white} !important;
     padding: 15px 0;
     transition: all 0.4s ease;
+    
 
     &.fixed{
         background-color: ${primaryColors.white} !important;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px 2px;
 
         .headerMenu{
+            .headerLogo{
+                width: 200px;
+            }
             ul{
                 li{
                     a{
@@ -24,9 +29,7 @@ export const HeaderWrapperStyled = styled(Box)`
                             background-color: ${primaryColors.black};
                         }
 
-                        &.headerLogo{
-                            width: 200px;
-                        }
+                        
                     }
                 }
             }
@@ -40,25 +43,33 @@ export const HeaderWrapperStyled = styled(Box)`
   }
 .headerMenu{
     margin: 0 auto;
+    width: 100%;
+    .headerLogo{
+        width: 250px;
+        margin: 0 20px;
+        &::after{
+            display: none;
+        }
+    }
     ul{
         display: flex;
         align-items: center;
         padding: 0;
         margin: 0 -10px;
-
+        flex: 2 1 0;
+        &.left_nav{
+            justify-content: flex-end;
+        }
+        &.right_nav{
+            justify-content: flex-start;
+        }
         li{
             width: initial;
             padding: 0 10px;
             a{
-                &.headerLogo{
-                    width: 250px;
-
-                    &::after{
-                        display: none;
-                    }
-                }
+                
                 position: relative;
-                color: ${primaryColors.white};
+                color: ${primaryColors.black};
                 padding-bottom: 3px;
 
                 &::after{
@@ -70,7 +81,7 @@ export const HeaderWrapperStyled = styled(Box)`
                     width: 100%;
                     height: 1px;
                     width: 0;
-                    background-color: ${primaryColors.white};
+                    background-color: ${primaryColors.black};
                     transition: 0.3s all ease;
                 }
               
@@ -83,4 +94,25 @@ export const HeaderWrapperStyled = styled(Box)`
         }
     }
 }
+.mobileHeaderMenu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (min-width: 899px) {
+        display: none;
+    }
+
+    .headerLogo{
+        width: 180px;
+
+        @media (max-width: 599px) {
+            width: 150px;
+        }
+    }
+    .headerMenuIcon{
+        color: ${primaryColors.buttonPrimary};
+    }
+}
+
 `

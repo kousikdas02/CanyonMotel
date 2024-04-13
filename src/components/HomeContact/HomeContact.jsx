@@ -8,7 +8,7 @@ const HomeContact = () => {
   return (
     <HomeContactWrapperStyled className='cmn_gap'>
         <Container fixed>
-            <Grid container columnSpacing={10} alignItems="center">
+            <Grid container columnSpacing={10} rowSpacing={4} alignItems="center">
                 <Grid item md={6} xs={12} className='homeContactImage' data-aos="zoom-in">
                     <figure>
                         <img src={assets.homeContact} alt="Home Contact" />

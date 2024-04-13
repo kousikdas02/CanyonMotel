@@ -3,7 +3,7 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const HomeContactWrapperStyled = styled(Box)`
 border-top : 5px solid ${primaryColors.black};
-background-color: rgba(255,255,255,0.8);
+background-color: rgba(255,255,255,0.85);
 .cmn_head{
     text-align: left;
 }

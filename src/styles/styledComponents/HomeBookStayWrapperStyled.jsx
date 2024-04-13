@@ -7,6 +7,10 @@ export const HomeBookStayWrapperStyled = styled(Box)`
     z-index: 1;
     padding: 300px 0;
     text-align: center;
+
+    @media (max-width: 1199px) {
+        padding: 150px 0;
+    }
     
     &::before{
         position: absolute;
@@ -24,6 +28,17 @@ export const HomeBookStayWrapperStyled = styled(Box)`
         color: ${primaryColors.white};
         text-shadow: rgb(0, 0, 0) 0px 3px 10px;
         margin-bottom: 35px;
+
+        @media (max-width: 1199px) {
+            font-size: 45px;
+            margin-bottom: 25px;
+        }
+        @media (max-width:899px) {
+            font-size: 40px;
+        }
+        @media (max-width: 599px) {
+            font-size: 35px;
+        }
     }
 }
 `

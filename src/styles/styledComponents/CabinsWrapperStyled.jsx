@@ -25,10 +25,10 @@ export const CabinsWrapperStyled = styled(Box)`
     &:last-child{
         border-bottom: 0;
     }
-    &:nth-child(odd){
-        background-color: rgba(255,255,255,0.8);
+    &:nth-of-type(odd){
+        background-color: rgba(255,255,255,0.85);
     }
-    &:nth-child(even){
+    &:nth-of-type(even){
         background-color: ${primaryColors.white};
         .MuiGrid-container{
             flex-direction: row-reverse;

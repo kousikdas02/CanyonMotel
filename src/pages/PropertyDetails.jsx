@@ -7,8 +7,9 @@ import Typography from '@mui/material/Typography';
 import { assets } from '../json/assets'
 import { Container, Grid, List, ListItem } from '@mui/material'
 import CustomButton from '../ui/CustomButton/CustomButton';
+// eslint-disable-next-line no-unused-vars
 import NewsLetter from '../components/NewsLetter/NewsLetter';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 export const propDetailsFeatureData = [
   {
@@ -73,9 +74,11 @@ const TITLE = 'Teton Court Motel - Property Details';
 const PropertyDetails = () => {
   return (
     <Wrapper>
-       <Helmet>
-          <title>{ TITLE }</title>
+      <HelmetProvider>
+        <Helmet>
+          <title>{TITLE}</title>
         </Helmet>
+      </HelmetProvider>
       <PropertyDetailsWrapperStyled style={{ background: `url(${assets.propertyDetailsBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
         <CommonInnerBanner innerBannerImage={assets.propertyDetailsBanner} innerBannerText="Property Details" />
 
@@ -182,14 +185,14 @@ const PropertyDetails = () => {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quos dolores aut deleniti aliquam rem, quia consequuntur veniam! In nisi vel alias esse illum repellat aliquam consequuntur id architecto aspernatur?
                 </Typography>
               </Box>
-              <CustomButton buttonType="white">
+              <CustomButton buttonColor="white">
                 SEE TERMS & CONDITIONS
               </CustomButton>
 
             </Box>
           </Container>
         </Box>
-        <NewsLetter />
+        {/* <NewsLetter /> */}
       </PropertyDetailsWrapperStyled>
     </Wrapper>
 

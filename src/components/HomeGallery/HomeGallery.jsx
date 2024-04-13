@@ -7,18 +7,18 @@ const HomeGallery = () => {
   return (
     <HomeGalleryWrapperStyled className='cmn_gap cmn_gap_top'>
         <Container maxWidth="lg">
-            <Grid container columnSpacing={3}>
-                <Grid item md={6} xs={12} lg={4} data-aos="fade-right">
+            <Grid container columnSpacing={3} >
+                <Grid item md={4} xs={12} lg={4} data-aos="fade-right">
                     <figure>
                         <img src={assets.homeGalleryOne} alt="" />
                     </figure>
                 </Grid>
-                <Grid item md={6} xs={12} lg={4} data-aos="fade-up">
+                <Grid item md={4} xs={12} lg={4} data-aos="fade-up">
                     <figure>
                         <img src={assets.homeGalleryTwo} alt="" />
                     </figure>
                 </Grid>
-                <Grid item md={6} xs={12} lg={4} data-aos="fade-left">
+                <Grid item md={4} xs={12} lg={4} data-aos="fade-left">
                     <figure>
                         <img src={assets.homeGalleryThree} alt="" />
                     </figure>

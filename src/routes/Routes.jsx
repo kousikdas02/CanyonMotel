@@ -5,6 +5,7 @@ import Cabins from "../pages/Cabins"
 import PropertyDetails from "../pages/PropertyDetails"
 import ContactUs from "../pages/ContactUs"
 import Activities from "../pages/Activities"
+import TermsConditions from '../pages/TermsConditions'
 
 
 const Routes = createBrowserRouter([
@@ -13,11 +14,11 @@ const Routes = createBrowserRouter([
         element: <Home/>
     },
     {
-        path: "/cabins",
+        path: "/rooms",
         element: <Cabins/>
     },
     {
-        path: "/property-details",
+        path: "/your-stay",
         element: <PropertyDetails/>
     },
     {
@@ -25,8 +26,12 @@ const Routes = createBrowserRouter([
         element: <ContactUs/>
     },
     {
-        path: "/activities",
+        path: "/local-adventures",
         element: <Activities/>
+    },
+    {
+        path: "terms-conditions",
+        element: <TermsConditions />
     }
     
 

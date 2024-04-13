@@ -6,7 +6,16 @@ import { primaryColors } from '../../mui-theme/_muiPalette';
 
 
 export const CustomButtonWrapperStyled = styled(Button)`
-&.cmnBlackBtn{
+   background-color: ${primaryColors.buttonPrimary};
+    color: ${primaryColors.white};
+    border: 1px solid transparent;
+    padding: 9px 30px;
+
+    &:hover{
+        background-color: ${primaryColors.buttonSecondary};
+        /* color: ${primaryColors.buttonPrimary}; */
+    }
+/* &.cmnBlackBtn{
     background-color: ${primaryColors.black};
     color: ${primaryColors.white};
     border: 1px solid ${primaryColors.black};
@@ -34,14 +43,14 @@ export const CustomButtonWrapperStyled = styled(Button)`
         background-color: transparent;
         color: ${primaryColors.white};
     }
-}
+} */
 
 
 `
 
-const CustomButton = ({children, className, buttonType, varient, ...props}) => {
+const CustomButton = ({children, className, buttonTypeSubmit, varient, buttonColor, ...props}) => {
   return (
-    <CustomButtonWrapperStyled onClick={props.onClick}  className={`${buttonType === "white" ? "cmnWhiteBtn" : "cmnBlackBtn"} ${className || ""
+    <CustomButtonWrapperStyled onClick={props.onClick} type={buttonTypeSubmit ? "submit" : "button"}  className={`${buttonColor === "white" ? "cmnWhiteBtn" : "cmnBlackBtn"} ${className || ""
   } ${varient === "hoverWhite" ? "hoverWhite" : ""}` } >
         {children}
     </CustomButtonWrapperStyled>

@@ -16,10 +16,10 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
         &:last-child{
             border-bottom: 0;
         }
-        &:nth-child(odd){
-        background-color: rgba(255,255,255,0.8);
+        &:nth-of-type(odd){
+        background-color: rgba(255,255,255,0.85);
         }
-        &:nth-child(even){
+        &:nth-of-type(even){
             background-color: ${primaryColors.white};
             .MuiGrid-container{
                 flex-direction: row-reverse;
@@ -74,7 +74,7 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
     }
 
     .propertyAmenities{
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255,255,255,0.85);
         .propertyAmenitiesImg{
             display: flex;
             line-height: 0;
@@ -111,7 +111,7 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
 
     .bookingRules{
         text-align: center;
-        background-color: rgba(255,255,255,0.8);
+        background-color: rgba(255,255,255,0.85);
         .bookingRulesInner{
             background-color: ${primaryColors.black};
             .cmn_head{
