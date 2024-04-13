@@ -20,6 +20,7 @@ function App() {
       easing: 'ease',
       delay: 100,
       once: true,
+      disable: 'mobile',
     });
     AOS.refresh();
   }, []);
