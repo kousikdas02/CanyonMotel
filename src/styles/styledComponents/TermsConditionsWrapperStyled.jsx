@@ -26,6 +26,10 @@ export const TermsConditionsWrapperStyled = styled(Box)`
         .MuiAccordionSummary-expandIconWrapper{
             color: ${primaryColors.tan};
         }
+        .MuiAccordionSummary-content{
+                margin: 0;
+                padding: 12px 0;
+            }
         &.Mui-expanded{
             background-color: ${primaryColors.tan};
             color: ${primaryColors.white};
