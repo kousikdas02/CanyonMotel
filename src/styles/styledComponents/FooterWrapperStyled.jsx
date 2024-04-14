@@ -9,6 +9,9 @@ background-color: ${primaryColors.black};
 .footerTop{
     padding: 50px 0 40px;
     border-bottom: 1px solid ${primaryColors.white};
+    @media (max-width: 899px) {
+        padding: 35px 0 30px;
+    }
     .footerTopRow{
         display: flex;
         flex-wrap: wrap;
@@ -191,6 +194,9 @@ background-color: ${primaryColors.black};
 }
 .footerBot{
     padding: 30px 0 50px;
+    @media (max-width: 899px) {
+        padding: 25px 0;
+    }
     .footerBotRow {
         @media (max-width: 1199px) {
             justify-content: center;
@@ -215,12 +221,14 @@ background-color: ${primaryColors.black};
             padding: 0 15px;
             margin-bottom: 10px;
             display: block;
+            font-size: 14px;
             color: ${primaryColors.white};
             @media (max-width: 899px) {
                 text-align: center;
             }
             a{
                 color: ${primaryColors.white};
+                font-size: 14px;
                 &:hover{
                     text-decoration: underline;
                 }
