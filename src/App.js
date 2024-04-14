@@ -20,8 +20,9 @@ function App() {
       easing: 'ease',
       delay: 100,
       once: true,
-      disable: 'mobile'
+      disable: 'mobile',
     });
+    AOS.refresh();
   }, []);
   return (
     <RouterProvider router={Routes}/>
