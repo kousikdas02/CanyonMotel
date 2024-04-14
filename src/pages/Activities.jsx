@@ -95,7 +95,7 @@ const Activities = () => {
             activityData.map((eachData, index) => (
               <Box className="activityEach cmn_gap" key={index}>
                 <Container fixed>
-                  <Grid container columnSpacing={5}>
+                  <Grid container columnSpacing={5} rowSpacing={4}>
                     <Grid item md={6} xs={12} data-aos={eachData.aos === "normal" ? "fade-right" : eachData.aos === "reverse" && "fade-left"}>
                       <figure className="activityImg">
                         <img src={eachData.img} alt="activity" />

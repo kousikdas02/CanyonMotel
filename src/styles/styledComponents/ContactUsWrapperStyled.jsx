@@ -9,7 +9,12 @@ export const ContactUsWrapperStyled = styled(Box)`
     .contactUsForm{
         background-color: ${primaryColors.white};
         padding: 100px 100px;
-
+        @media (max-width: 899px) {
+            padding: 50px 50px;
+        }
+        @media (max-width: 599px) {
+            padding: 35px 30px;
+        }
         .cmn_head{
             h2{
                 
@@ -46,6 +51,9 @@ export const ContactUsWrapperStyled = styled(Box)`
         .contactFormSubmit{
             padding-top: 50px;
             text-align: center;
+            @media (max-width: 899px) {
+                padding-top: 30px;
+            }
             .contactFormSubmitBtn{
                 padding: 9px 70px;
             }
@@ -55,9 +63,21 @@ export const ContactUsWrapperStyled = styled(Box)`
 }
 .contactUsLocation{
     background-color: rgba(255,255,255,0.85);
+    .contactLocationCol{
+        @media (max-width: 899px) {
+            order: 1;
+        }
+    }
     .contactLocationMap{
         width: 100%;
         height: 100%;
+
+        @media (max-width: 899px) {
+            min-height: 400px;
+        }
+        @media (max-width: 599px) {
+            min-height: 350px;
+        }
     }
 
     .contactUsInfo{
@@ -66,8 +86,11 @@ export const ContactUsWrapperStyled = styled(Box)`
         flex-direction: column;
         justify-content: center;
 
+        @media (max-width: 899px) {
+            padding: 0;
+        }
+
         .contactUsInfoList{
-            margin-bottom: 15px;
             padding-left: 20px;
             li{
                 position: relative;

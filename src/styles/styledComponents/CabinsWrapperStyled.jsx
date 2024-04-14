@@ -16,11 +16,20 @@ export const CabinsWrapperStyled = styled(Box)`
         right: 0;
         height: 100%;
         width: 50%;
+
+        @media (max-width: 899px) {
+            position: static;
+            width: 100%;
+            margin-bottom: 30px;
+        }
     }
     .cabinContentCol{
         padding-right: 100px;
         padding-top: 40px;
         padding-bottom: 40px;
+        @media (max-width: 899px) {
+            padding: 0;
+        }
     }
     &:last-child{
         border-bottom: 0;
@@ -40,6 +49,9 @@ export const CabinsWrapperStyled = styled(Box)`
         .cabinContentCol{
             padding-right: 0;
             padding-left: 40px;
+            @media (max-width: 899px) {
+                padding: 0;
+            }
         }
     }
     

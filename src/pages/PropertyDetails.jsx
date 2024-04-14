@@ -129,7 +129,7 @@ const PropertyDetails = () => {
 
         <Box className="ourGround cmn_gap">
           <Container fixed>
-            <Grid container columnSpacing={5} alignItems="center" >
+            <Grid container columnSpacing={5} rowSpacing={4} alignItems="center" >
               <Grid item md={6} xs={12} data-aos="zoom-in">
                 <Box className="ourGroundImg">
                   <img src={assets.ourGround} alt="Our Ground" />
@@ -149,8 +149,8 @@ const PropertyDetails = () => {
 
         <Box className="propertyAmenities cmn_gap">
           <Container fixed>
-            <Grid container alignItems="center">
-              <Grid item md={6} xs={12} data-aos="fade-right">
+            <Grid container rowSpacing={4} alignItems="center" className='propertyAmenitiesRow'>
+              <Grid item md={6} xs={12} data-aos="fade-right" className='propertyAmenitiesTextCol'>
                 <Box className="cmn_head">
                   <Typography variant='h2' textAlign="left">PROPERTY AMENITIES</Typography>
                 </Box>

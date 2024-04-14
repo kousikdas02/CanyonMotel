@@ -210,12 +210,12 @@ const Cabins = () => {
                   <Box className="eachCabinInner">
                     <Container maxWidth="xl">
                       <Grid container>
-                        <Grid item md={6} className='cabinImgSlider'>
+                        <Grid item lg={6} xs={12} className='cabinImgSlider'>
                           {
                             <CabinCommonImageSlider cabinImageSliderList={cabin.cabinImageSliderList} />
                           }
                         </Grid>
-                        <Grid item md={6} className='cabinContentCol'>
+                        <Grid item lg={6} xs={12} className='cabinContentCol'>
                           <Box className="cmn_head">
                             <Typography variant='h2'>{cabin.title}</Typography>
                           </Box>

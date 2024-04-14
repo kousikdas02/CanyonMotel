@@ -37,6 +37,9 @@ export const ActivitiesWrapperStyled = styled(Box)`
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
+                @media (max-width: 899px) {
+                    padding: 0;
+                }
             }
         }
     }

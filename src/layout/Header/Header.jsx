@@ -38,26 +38,19 @@ const Header = () => {
 
   ];
 
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const [open, setOpen] = React.useState(false);
 
-  // const handleDrawerToggle = () => {
-  //   setMobileOpen((prevState) => !prevState);
-  // };
-  const handleDrawerOpen = () => {
-    setMobileOpen(true);
-  };
-  // };
-  const handleDrawerClose = () => {
-    setMobileOpen(false);
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen);
   };
 
-  const drawer = (
-    <Box  className="mobileMenuDrawer">
-      <Button className='mobileMenuDrawerCloseBtn' onClick={handleDrawerClose}>X</Button>
+  const  drawer = (
+    <Box   className="mobileMenuDrawer">
+      <Button className='mobileMenuDrawerCloseBtn' onClick={toggleDrawer(false)}>X</Button>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <NavLink to={item.path} onClick={handleDrawerClose} className={(navData) => (navData.isActive ? "active" : 'none')}>
+            <NavLink to={item.path} onClick={toggleDrawer(false)} className={(navData) => (navData.isActive ? "active" : 'none')}>
               {item.name}
             </NavLink>
           </ListItem>
@@ -90,7 +83,7 @@ const Header = () => {
                 color="inherit"
                 aria-label="open drawer"
                 edge="start"
-                onClick={handleDrawerOpen}
+                onClick={toggleDrawer(true)}
                 className='headerMenuIcon'
               >
 
@@ -126,7 +119,7 @@ const Header = () => {
         <Drawer
           // container={container}
           variant="temporary"
-          open={mobileOpen}
+          open={open} onClose={toggleDrawer(false)}
          
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.

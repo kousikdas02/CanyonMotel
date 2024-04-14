@@ -11,7 +11,9 @@ export const HeaderWrapperStyled = styled(Box)`
     padding: 15px 0;
     transition: all 0.4s ease;
     
-
+    @media (max-width: 899px) {
+        padding: 10px 0;
+    }
     &.fixed{
         background-color: ${primaryColors.white} !important;
         box-shadow: rgba(0, 0, 0, 0.25) 0px 0px 8px 2px;

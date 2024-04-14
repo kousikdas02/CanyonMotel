@@ -12,5 +12,11 @@ background-color: rgba(255,255,255,0.85);
     .locationFrame{
         width: 100%;
         display: flex;
+        @media (max-width: 899px) {
+            height: 400px;
+        }
+        @media (max-width: 599px) {
+            height: 350px;
+        }
     }
 `

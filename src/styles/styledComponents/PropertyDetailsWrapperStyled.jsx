@@ -59,6 +59,9 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
                 height: 475px;
                 width: 100%;
                 object-fit: cover;
+                @media (max-width: 899px) {
+                    height: 350px;
+                }
             }
         }
         .ourGroundContent{
@@ -75,6 +78,13 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
 
     .propertyAmenities{
         background-color: rgba(255,255,255,0.85);
+        .propertyAmenitiesRow{
+           .propertyAmenitiesTextCol{
+            @media (max-width: 899px) {
+                order: 1;
+            }
+           }
+        }
         .propertyAmenitiesImg{
             display: flex;
             line-height: 0;
@@ -82,6 +92,9 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
                 height: 480px;
                 width: 100%;
                 object-fit: cover;
+                @media (max-width: 899px) {
+                    height: 350px;
+                }
             }
         }
         .propertyAmenitiesList{
@@ -114,6 +127,8 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
         background-color: rgba(255,255,255,0.85);
         .bookingRulesInner{
             background-color: ${primaryColors.black};
+            padding-left: 30px;
+            padding-right: 30px;
             .cmn_head{
                 h2{
                     color: ${primaryColors.white};

@@ -22,6 +22,13 @@ export const CommonInnerBannerWrapperStyled = styled(Box)`
             width: 100%;
             height: 465px;
             object-fit: cover;
+
+            @media (max-width: 1199px) {
+                height: 320px;
+            }
+            @media (max-width: 899px) {
+                height: 200px;
+            }
         }
     }
     .innerBannerDetails{
