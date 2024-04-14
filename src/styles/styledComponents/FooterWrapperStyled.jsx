@@ -72,6 +72,12 @@ background-color: ${primaryColors.black};
             }
             .footerLogo{
                 width: 300px;
+                @media (max-width: 899px) {
+                    width: 250px;
+                }
+                @media (max-width: 599px) {
+                    width: 230px;
+                }
             }
             p{
                 color: ${primaryColors.white};
