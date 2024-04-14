@@ -38,20 +38,31 @@ const ContactUs = () => {
                 <Grid container columnSpacing={4} rowSpacing={3}>
                   <Grid item lg={4} md={6} xs={12}>
                     <label htmlFor="name">Name:</label>
-                    <TextField id="name" variant="outlined" {...register("Name", {required: true})}  />
-                    {/* <Typography variant='body1'>{errors}</Typography> */}
+                    <TextField id="name" variant="outlined" {...register("Name", {required: "Please enter your name."})}  />
+                    {errors.Name && (
+                      <Typography variant='body1' className="errorMsg">{errors.Name?.message}</Typography>
+                    )}
                   </Grid>
                   <Grid item lg={4} md={6} xs={12}>
                     <label htmlFor="email">Email:</label>
-                    <TextField id="email" type='email' variant="outlined" {...register("Email", {required: true, pattern: /^\S+@\S+$/i})} />
+                    <TextField id="email" type='email' variant="outlined" {...register("Email", {required: "Please enter your email.", pattern: /^\S+@\S+$/i})} />
+                    {errors.Email && (
+                      <Typography variant='body1' className="errorMsg">{errors.Email?.message}</Typography>
+                    )}
                   </Grid>
                   <Grid item lg={4} md={6} xs={12}>
                     <label htmlFor="phone">Phone:</label>
-                    <TextField id="phone" type="tel" variant="outlined" {...register("Mobile number", {required: true, minLength: 6, maxLength: 12})} />
+                    <TextField id="phone" type="tel" variant="outlined" {...register("Phone", {required: "Please enter your phone number.", minLength: 6, maxLength: 12})} />
+                    {errors.Phone && (
+                      <Typography variant='body1' className="errorMsg">{errors.Phone?.message}</Typography>
+                    )}
                   </Grid>
                   <Grid item lg={12} md={12} xs={12}>
                     <label htmlFor="message">Message:</label>
-                    <TextField multiline rows={3} id="message" variant="outlined" {...register("Message", {required: true})} />
+                    <TextField multiline rows={3} id="message" variant="outlined" {...register("Message", {required: "Please enter your message."})} />
+                    {errors.Message && (
+                      <Typography variant='body1' className="errorMsg">{errors.Message?.message}</Typography>
+                    )}
                   </Grid>
                 </Grid>
                 <Box className="contactFormSubmit">

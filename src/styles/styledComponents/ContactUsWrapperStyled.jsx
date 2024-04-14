@@ -24,6 +24,14 @@ export const ContactUsWrapperStyled = styled(Box)`
            
             text-align: center;
             margin-bottom: 40px;
+
+            &.errorMsg{
+                color: ${primaryColors.errorMain};
+                padding-top: 5px;
+                text-align: left;
+                margin-bottom: 0;
+                font-weight: 500;
+            }
         }
         label{
             display: block;
