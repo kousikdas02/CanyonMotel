@@ -51,6 +51,11 @@ z-index: 1;
         @media (max-width: 899px) {
             flex-wrap: wrap;
         }
+        label{
+                display: block;
+                color: ${primaryColors.white};
+                margin-bottom: 5px;
+            }
         .bannerCalendarInput{
             @media (max-width: 899px) {
                 width: 48%;
@@ -59,11 +64,7 @@ z-index: 1;
                 width: 100%;
                 margin: 0 0 15px;
             }
-            label{
-                display: block;
-                color: ${primaryColors.white};
-                margin-bottom: 5px;
-            }
+            
             fieldset{
                 display: none;
             }
@@ -96,10 +97,10 @@ z-index: 1;
         }
     }
     .homeBannerBookBtn{
-        &:hover{
+        /* &:hover{
             background-color: ${primaryColors.white};
             border-color: ${primaryColors.white};
-        }
+        } */
     }
 }
 `

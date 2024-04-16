@@ -4,11 +4,11 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 
 export const FooterWrapperStyled = styled(Box)`
-background-color: ${primaryColors.black};
+background-color: ${primaryColors.white};
 
 .footerTop{
     padding: 50px 0 40px;
-    border-bottom: 1px solid ${primaryColors.white};
+    border-bottom: 1px solid ${primaryColors.black};
     @media (max-width: 899px) {
         padding: 35px 0 30px;
     }
@@ -80,11 +80,11 @@ background-color: ${primaryColors.black};
                 }
             }
             p{
-                color: ${primaryColors.white};
+                color: ${primaryColors.black};
                 margin-bottom: 16px;
                 font-size: 14px;
                 &.footerTitle{
-                    color: ${primaryColors.white};
+                    color: ${primaryColors.black};
                     margin-bottom: 16px;
                     font-size: 18px;
                     font-family: "Yeseva One", serif;
@@ -113,7 +113,7 @@ background-color: ${primaryColors.black};
                         display: flex;
                         align-items: center;
                         font-size: 14px;
-                        color: ${primaryColors.white};
+                        color: ${primaryColors.black};
                         i{
                             display: flex;
                             justify-content: center;
@@ -136,7 +136,7 @@ background-color: ${primaryColors.black};
                     }
                     padding: 0;
                     a{
-                        color: ${primaryColors.white};
+                        color: ${primaryColors.black};
                         position: relative;
                         font-size: 14px;
                         padding-bottom: 3px;
@@ -148,7 +148,7 @@ background-color: ${primaryColors.black};
                             width: 100%;
                             height: 1px;
                             width: 0;
-                            background-color: ${primaryColors.white};
+                            background-color: ${primaryColors.black};
                             transition: 0.3s all ease;
                         }
                         &.active{
@@ -179,7 +179,7 @@ background-color: ${primaryColors.black};
                     padding: 0 10px;
                     width: initial;
                     a{
-                        border: 2px solid ${primaryColors.white};
+                        border: 2px solid ${primaryColors.black};
                         border-radius: 100%;
                         padding: 0;
                         width: 37px;
@@ -228,12 +228,12 @@ background-color: ${primaryColors.black};
             margin-bottom: 10px;
             display: block;
             font-size: 14px;
-            color: ${primaryColors.white};
+            color: ${primaryColors.black};
             @media (max-width: 899px) {
                 text-align: center;
             }
             a{
-                color: ${primaryColors.white};
+                color: ${primaryColors.black};
                 font-size: 14px;
                 &:hover{
                     text-decoration: underline;
