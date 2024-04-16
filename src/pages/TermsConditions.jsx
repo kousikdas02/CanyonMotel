@@ -36,6 +36,8 @@ const TermsConditions = () => {
                                 >
                                     Booking and Cancellation Policies
                                 </AccordionSummary>
+
+                                
                                 <AccordionDetails>
                                     <Typography variant='h6'>Cancellation Policy:</Typography>
                                     <Typography variant='body1'>

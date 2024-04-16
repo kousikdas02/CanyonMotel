@@ -201,7 +201,9 @@ const Cabins = () => {
         </Helmet>
       </HelmetProvider>
       <CabinsWrapperStyled style={{ background: `url(${assets.cabinBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
-        <CommonInnerBanner innerBannerImage={assets.cabinBanner} innerBannerText="CABINS" />
+        
+        <CommonInnerBanner innerBannerImage={assets.cabinBanner} innerBannerText="Our Rooms" />
+
         <Box className="eachCabinWrap">
           {
             cabinData.map((cabin, index) => {

@@ -80,7 +80,7 @@ const PropertyDetails = () => {
         </Helmet>
       </HelmetProvider>
       <PropertyDetailsWrapperStyled style={{ background: `url(${assets.propertyDetailsBg})`, backgroundRepeat: "repeat", backgroundSize: "auto", backgroundPosition: "50% 50%", backgroundAttachment: "fixed", }}>
-        <CommonInnerBanner innerBannerImage={assets.propertyDetailsBanner} innerBannerText="Property Details" />
+        <CommonInnerBanner innerBannerImage={assets.propertyDetailsBanner} innerBannerText="Your Stay" />
 
         <Box className="motelInfo cmn_gap">
           <Container fixed>

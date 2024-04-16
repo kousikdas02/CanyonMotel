@@ -9,8 +9,11 @@ import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import { Button, Container } from '@mui/material'
-import {  NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { assets } from '../../json/assets';
+import CallIcon from '@mui/icons-material/Call';
+import EmailIcon from '@mui/icons-material/Email';
+import CustomButton from '../../ui/CustomButton/CustomButton';
 const Header = () => {
   const drawerWidth = 240;
   const navItems = [
@@ -19,8 +22,8 @@ const Header = () => {
       path: "/"
     },
     {
-      name: "Rooms",
-      path: "/rooms",
+      name: "Our Rooms",
+      path: "/our-rooms",
     },
     {
       name: "Your Stay",
@@ -34,6 +37,10 @@ const Header = () => {
       name: "Local Adventures",
       path: "/local-adventures",
     },
+    {
+      name: "Policies / Conditions",
+      path: "/terms-conditions",
+    },
 
 
   ];
@@ -44,8 +51,8 @@ const Header = () => {
     setOpen(newOpen);
   };
 
-  const  drawer = (
-    <Box   className="mobileMenuDrawer">
+  const drawer = (
+    <Box className="mobileMenuDrawer">
       <Button className='mobileMenuDrawerCloseBtn' onClick={toggleDrawer(false)}>X</Button>
       <List>
         {navItems.map((item) => (
@@ -56,6 +63,22 @@ const Header = () => {
           </ListItem>
         ))}
       </List>
+      <Box className="hamburgerBookBtn">
+        <CustomButton buttonColor='black' className="homeBannerBookBtn" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+          BOOK NOW
+        </CustomButton>
+      </Box>
+      <Box className="hamburgerContactList_wrap">
+        <List disablePadding className='hamburgerContactList'>
+          <ListItem>
+            <Link to="tel:(307) 367-3367"><i><CallIcon /></i> (307) 367-3367</Link>
+          </ListItem>
+          <ListItem>
+            <Link to="mailto:res@tetoncourt.com"><i><EmailIcon /></i> res@tetoncourt.com</Link>
+          </ListItem>
+        </List>
+
+      </Box>
     </Box>
   );
 
@@ -97,8 +120,8 @@ const Header = () => {
             <Box className="headerMenu" sx={{ display: { xs: 'none', md: 'flex' } }}>
               <List className='left_nav '>
                 <ListItem>
-                  <NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/rooms">
-                    Rooms
+                  <NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/our-rooms">
+                    Our Rooms
                   </NavLink >
                 </ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/your-stay">Your Stay</NavLink ></ListItem>
@@ -120,7 +143,7 @@ const Header = () => {
           // container={container}
           variant="temporary"
           open={open} onClose={toggleDrawer(false)}
-         
+
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}

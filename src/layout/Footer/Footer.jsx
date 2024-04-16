@@ -12,8 +12,8 @@ import InstagramIcon from "../../ui/icons/InstagramIcon"
 import TwitterIcon from "../../ui/icons/TwitterIcon"
 export const foooterSiteMaop = [
   {
-    name: "Rooms",
-    path: "/rooms",
+    name: "Our Rooms",
+    path: "/our-rooms",
   },
   {
     name: "Your Stay",
@@ -26,6 +26,10 @@ export const foooterSiteMaop = [
   {
     name: "Local Adventures",
     path: "/local-adventures",
+  },
+  {
+    name: "Our Story",
+    path: "/our-story",
   },
 
 ]
@@ -43,12 +47,20 @@ const Footer = () => {
             </Box>
             <Box className="footerTopCol footerTopColPadding footerTopLocationContactCol">
               <Typography variant='body1' className="footerTitle">OUR LOCATION</Typography>
-              <Typography variant='body1'><b>Physical Address:</b></Typography>
+              <Typography variant='body1'>
+                <b>Physical Address:</b>
+                <br />
+                (UPS & FedEx for all gear and packages)
+                </Typography>
               <Typography variant='body1' className='footerLocationDetails'>Teton Court Motel
                 123 E Magnolia Street
                 Pinedale, WY 82941
               </Typography>
-              <Typography variant='body1'><b>Mailing Address:</b></Typography>
+              <Typography variant='body1'>
+                <b>Mailing Address:</b>
+                <br />
+                (USPS mail only, no packages)
+                </Typography>
               <Typography variant='body1'>
                 Teton Court Motel
                 PO Box 582 <br />
