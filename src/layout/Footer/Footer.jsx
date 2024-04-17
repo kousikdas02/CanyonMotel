@@ -20,16 +20,17 @@ export const foooterSiteMaop = [
     path: "/your-stay",
   },
   {
-    name: "Contact Us",
-    path: "/contact-us",
+    name: "Our Story",
+    path: "/our-story",
   },
   {
     name: "Local Adventures",
     path: "/local-adventures",
   },
+  
   {
-    name: "Our Story",
-    path: "/our-story",
+    name: "Contact Us",
+    path: "/contact-us",
   },
 
 ]
@@ -100,7 +101,7 @@ const Footer = () => {
               <Typography variant='body1' className="footerTitle">HOURS</Typography>
               <Typography variant='body1'>Our reservation and front desk team are available daily from 9am to 6pm CST.</Typography>
               <CustomButton buttonColor='white' className='footerBookBtn' onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
-                BOOK ONLINE
+              BOOK A ROOM
               </CustomButton>
 
               <List className='footerSocialList'>

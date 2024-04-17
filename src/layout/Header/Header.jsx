@@ -30,8 +30,8 @@ const Header = () => {
       path: "/your-stay",
     },
     {
-      name: "Contact Us",
-      path: "/contact-us",
+      name: "Our Story",
+      path: "/our-story",
     },
     {
       name: "Local Adventures",
@@ -40,6 +40,10 @@ const Header = () => {
     {
       name: "Policies / Conditions",
       path: "/terms-conditions",
+    },
+    {
+      name: "Contact Us",
+      path: "/contact-us",
     },
 
 
@@ -65,7 +69,7 @@ const Header = () => {
       </List>
       <Box className="hamburgerBookBtn">
         <CustomButton buttonColor='black' className="homeBannerBookBtn" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
-          BOOK NOW
+          BOOK A ROOM
         </CustomButton>
       </Box>
       <Box className="hamburgerContactList_wrap">
@@ -130,9 +134,9 @@ const Header = () => {
 
               <NavLink className={(navData) => (navData.isActive ? "active headerLogo" : 'headerLogo')} to="/" ><img src={assets.logo} alt="header logo" /></NavLink >
               <List className='right_nav '>
-                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/contact-us">Contact Us</NavLink ></ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/local-adventures">Local Adventures</NavLink ></ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/terms-conditions">Policies</NavLink ></ListItem>
+                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/contact-us">Contact Us</NavLink ></ListItem>
               </List>
 
             </Box>
