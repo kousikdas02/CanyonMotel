@@ -49,7 +49,8 @@ const cabinData = [
       assets.cabinImage3,
       assets.cabinImage4,
       assets.cabinImage5,
-    ]
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
     title: "Deluxe Double",
@@ -93,7 +94,8 @@ const cabinData = [
       assets.cabinImage3,
       assets.cabinImage4,
       assets.cabinImage5,
-    ]
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
     title: "AirCon Deluxe Double",
@@ -137,7 +139,8 @@ const cabinData = [
       assets.cabinImage3,
       assets.cabinImage4,
       assets.cabinImage5,
-    ]
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
     title: "Superior Double",
@@ -187,7 +190,8 @@ const cabinData = [
       assets.cabinImage3,
       assets.cabinImage4,
       assets.cabinImage5,
-    ]
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
 ]
 
@@ -235,7 +239,7 @@ const Cabins = () => {
                             }
                           </List>
                           <Typography variant='body1' className='personPerRoom'><b>Occupancy:</b> {cabin.persons}</Typography>
-                          <CustomButton buttonColor="black" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+                          <CustomButton buttonColor="black" onClick={() => window.open(cabin.linkPath, '_blank')}>
                             BOOK NOW
                           </CustomButton>
                         </Grid>

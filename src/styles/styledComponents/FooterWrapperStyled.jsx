@@ -235,7 +235,7 @@ background-color: ${primaryColors.white};
             a{
                 color: ${primaryColors.black};
                 font-size: 14px;
-                &:hover{
+                &:hover, &.active{
                     text-decoration: underline;
                 }
             }

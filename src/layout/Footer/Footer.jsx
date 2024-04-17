@@ -33,6 +33,12 @@ export const foooterSiteMaop = [
   },
 
 ]
+const scrollToTop = () => {
+  window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+  });
+};
 const Footer = () => {
 
   return (
@@ -41,7 +47,7 @@ const Footer = () => {
         <Box className="footerTop">
           <Box className="footerTopRow">
             <Box className="footerTopCol footerTopLogoCol">
-              <Link to="/" className='footerLogo'>
+              <Link to="/" className='footerLogo' onClick={scrollToTop}>
                 <img src={assets.logo} alt="header logo" />
               </Link>
             </Box>
@@ -51,18 +57,19 @@ const Footer = () => {
                 <b>Physical Address:</b>
                 <br />
                 (UPS & FedEx for all gear and packages)
-                </Typography>
-              <Typography variant='body1' className='footerLocationDetails'>Teton Court Motel
-                123 E Magnolia Street
+              </Typography>
+              <Typography variant='body1' className='footerLocationDetails'>
+                Teton Court Motel <br />
+                123 E Magnolia Street <br />
                 Pinedale, WY 82941
               </Typography>
               <Typography variant='body1'>
                 <b>Mailing Address:</b>
                 <br />
                 (USPS mail only, no packages)
-                </Typography>
+              </Typography>
               <Typography variant='body1'>
-                Teton Court Motel
+                Teton Court Motel <br />
                 PO Box 582 <br />
                 Pinedale, WY 82941
               </Typography>
@@ -82,7 +89,7 @@ const Footer = () => {
                   foooterSiteMaop.map((item, index) => {
                     return (
                       <ListItem key={index}>
-                        <NavLink className={(navData) => (navData.isActive ? "active" : 'none')} to={item.path}>{item.name}</NavLink>
+                        <NavLink onClick={scrollToTop} className={(navData) => (navData.isActive ? "active" : 'none')} to={item.path}>{item.name}</NavLink>
                       </ListItem>
                     )
                   })
@@ -116,21 +123,21 @@ const Footer = () => {
             <Box className="footerBotLeft">
               <List disablePadding>
                 <ListItem>
-                  &copy; 2024 <Link to="/">Teton Court Motel.</Link> All rights reserved.
+                  &copy; 2024 <Link onClick={scrollToTop} to="/">Teton Court Motel.</Link> All rights reserved.
                 </ListItem>
               </List>
             </Box>
             <Box className="footerBotRight">
               <List disablePadding>
                 <ListItem>
-                  <Link to="/terms-conditions">
-                    Policies/Terms
-                  </Link>
+                  <NavLink onClick={scrollToTop} to="/terms-conditions" className={(navData) => (navData.isActive ? "active" : 'none')}>
+                    Policies / Terms 
+                  </NavLink>
                 </ListItem>
                 <ListItem>
-                  <Link to="/terms-conditions">
-                    Conditions/Privacy and Cookie Statement
-                  </Link>
+                  <NavLink onClick={scrollToTop} to="/terms-conditions" className={(navData) => (navData.isActive ? "active" : 'none')}>
+                  Conditions / Privacy and Cookies Statement
+                  </NavLink>
                 </ListItem>
               </List>
             </Box>

@@ -10,6 +10,7 @@ import CustomButton from '../ui/CustomButton/CustomButton';
 // eslint-disable-next-line no-unused-vars
 import NewsLetter from '../components/NewsLetter/NewsLetter';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
+import { useNavigate } from 'react-router-dom';
 
 export const propDetailsFeatureData = [
   {
@@ -36,7 +37,9 @@ export const propDetailsFeatureData = [
       {
         eachText: "The Teton Court Motel is ideal for those who seek a clean and comfortable room at an affordable price.",
       }
-    ]
+    ],
+    linkPath: '/our-rooms',
+    linText: "Our Rooms"
   },
   {
     title: "BENEFITS OF BOOKING DIRECTLY WITH US",
@@ -46,7 +49,8 @@ export const propDetailsFeatureData = [
       {
         eachText: "The Teton Court Motel offers clean and comfortable rooms near the heart of Pinedale. When booking through our website, you can obtain a confirmed booking with a 5% discount (compared with rates found on websites such as Booking.com and Expedia), easier (and more generous) cancellation policies, better guidance to get the best available room for your needs, and for those bringing their furry friends, a faster confirmation that a pet-friendly room is available.",
       },
-    ]
+    ],
+    bookNow : true,
   },
 ]
 
@@ -72,6 +76,7 @@ export const propertyAmenities = [
 ]
 const TITLE = 'Teton Court Motel - Property Details';
 const PropertyDetails = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <HelmetProvider>
@@ -117,7 +122,24 @@ const PropertyDetails = () => {
                             )
                           })
                         }
+                        <Box className="featureContentBtnWrap">
+                          {
+                            eachData.linkPath &&
+                            <CustomButton buttonColor="black" onClick={() => navigate(`${eachData.linkPath}`)} >
+                              {eachData.linText}
+                            </CustomButton>
+                          }
+
+                          {
+                            eachData.bookNow &&
+                            <CustomButton buttonColor="black"  onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+                                BOOK NOW
+                            </CustomButton>
+                          }
+
+                        </Box>
                       </Box>
+
 
                     </Grid>
                   </Grid>
@@ -185,7 +207,7 @@ const PropertyDetails = () => {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae quos dolores aut deleniti aliquam rem, quia consequuntur veniam! In nisi vel alias esse illum repellat aliquam consequuntur id architecto aspernatur?
                 </Typography>
               </Box>
-              <CustomButton buttonColor="white">
+              <CustomButton buttonColor="white" onClick={() => navigate('/terms-conditions')}>
                 SEE TERMS & CONDITIONS
               </CustomButton>
 

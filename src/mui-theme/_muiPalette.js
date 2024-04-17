@@ -36,6 +36,7 @@ export const primaryColors = {
  tan: "#CF823F",
 buttonPrimary: "#613F35",
 buttonSecondary: "#1C6EBA ",
+steelBlue: "#6E9DB1",
 };
 
  

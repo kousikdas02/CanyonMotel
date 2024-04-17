@@ -13,7 +13,7 @@ const HomeBookStay = () => {
             <Container fixed>
                 <Box className="homeBookStayInner">
                     <Typography variant="h2">BOOK YOUR NEXT STAY TODAY</Typography>
-                    <CustomButton buttonColor="black" varient="hoverWhite" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+                    <CustomButton buttonColor="black"  onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
                         BOOK NOW
                     </CustomButton>
                 </Box>

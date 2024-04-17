@@ -20,18 +20,18 @@ export const TermsConditionsWrapperStyled = styled(Box)`
         background-color: rgba(0,0,0,.03);
         font-weight: 600;
         min-height: 55px;
-        color: ${primaryColors.tan};
+        color: ${primaryColors.steelBlue};
         border-top-left-radius: 5px;
         border-top-right-radius: 5px;
         .MuiAccordionSummary-expandIconWrapper{
-            color: ${primaryColors.tan};
+            color: ${primaryColors.steelBlue};
         }
         .MuiAccordionSummary-content{
                 margin: 0;
                 padding: 12px 0;
             }
         &.Mui-expanded{
-            background-color: ${primaryColors.tan};
+            background-color: ${primaryColors.steelBlue};
             color: ${primaryColors.white};
             min-height: 55px;
             .MuiAccordionSummary-content{

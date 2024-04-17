@@ -6,13 +6,13 @@ import { primaryColors } from '../../mui-theme/_muiPalette';
 
 
 export const CustomButtonWrapperStyled = styled(Button)`
-   background-color: ${primaryColors.buttonPrimary};
+   background-color: ${primaryColors.steelBlue};
     color: ${primaryColors.white};
     border: 1px solid transparent;
     padding: 9px 30px;
 
     &:hover{
-        background-color: ${primaryColors.buttonSecondary};
+        background-color: ${primaryColors.buttonPrimary};
         /* color: ${primaryColors.buttonPrimary}; */
     }
 /* &.cmnBlackBtn{

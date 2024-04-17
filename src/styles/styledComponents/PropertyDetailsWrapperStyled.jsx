@@ -46,6 +46,10 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
                 flex-direction: column;
                 justify-content: center;
             }
+
+            .featureContentBtnWrap{
+                padding-top: 15px;
+            }
         }
        
     }
