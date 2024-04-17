@@ -117,7 +117,7 @@ const Header = () => {
             {/* <Link to="/" className='headerLogo'>
             <img src={assets.logo} alt="header logo" />
           </Link> */}
-            <Box className="headerMenu" sx={{ display: { xs: 'none', md: 'flex' } }}>
+            <Box className="headerMenu" sx={{ display: { xs: 'none', lg: 'flex' } }}>
               <List className='left_nav '>
                 <ListItem>
                   <NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/our-rooms">
@@ -125,12 +125,14 @@ const Header = () => {
                   </NavLink >
                 </ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/your-stay">Your Stay</NavLink ></ListItem>
+                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/our-story">Our Story</NavLink ></ListItem>
               </List>
 
               <NavLink className={(navData) => (navData.isActive ? "active headerLogo" : 'headerLogo')} to="/" ><img src={assets.logo} alt="header logo" /></NavLink >
               <List className='right_nav '>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/contact-us">Contact Us</NavLink ></ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/local-adventures">Local Adventures</NavLink ></ListItem>
+                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/terms-conditions">Policies</NavLink ></ListItem>
               </List>
 
             </Box>

@@ -101,7 +101,7 @@ export const HeaderWrapperStyled = styled(Box)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media (min-width: 899px) {
+    @media (min-width: 1199px) {
         display: none;
     }
 

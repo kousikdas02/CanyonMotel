@@ -15,7 +15,7 @@ const Wrapper = ({ children }) => {
       <Header />
       <Box className="bodyContent">
 
-        <Box className={showAnnouncementBanner === true ? "announcementBanner" : "announcementBanner hide"} bgcolor={primaryColors.steelBlue}>
+        <Box className={showAnnouncementBanner === true ? "announcementBanner" : "announcementBanner hide"} bgcolor={primaryColors.buttonSecondary}>
           
           <Container>
             <Box className="announcementBannerInner">
