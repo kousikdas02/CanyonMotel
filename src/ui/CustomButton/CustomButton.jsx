@@ -48,10 +48,10 @@ export const CustomButtonWrapperStyled = styled(Button)`
 
 `
 
-const CustomButton = ({children, className, buttonTypeSubmit, varient, buttonColor, ...props}) => {
+const CustomButton = ({children, className, buttonTypeSubmit, varient, buttonColor, disabled, ...props}) => {
   return (
     <CustomButtonWrapperStyled onClick={props.onClick} type={buttonTypeSubmit ? "submit" : "button"}  className={`${buttonColor === "white" ? "cmnWhiteBtn" : "cmnBlackBtn"} ${className || ""
-  } ${varient === "hoverWhite" ? "hoverWhite" : ""}` } >
+  } ${varient === "hoverWhite" ? "hoverWhite" : ""}` } disabled={disabled} >
         {children}
     </CustomButtonWrapperStyled>
   )

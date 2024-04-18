@@ -57,7 +57,7 @@ export const ContactUsWrapperStyled = styled(Box)`
         }
 
         .contactFormSubmit{
-            padding-top: 50px;
+            padding-top: 30px;
             text-align: center;
             @media (max-width: 899px) {
                 padding-top: 30px;
@@ -122,5 +122,25 @@ export const ContactUsWrapperStyled = styled(Box)`
         }
     }
 
+}
+.customCaptcha{
+    padding-top: 30px;
+    .MuiStack-root {
+        margin-bottom: 15px;
+        .MuiTextField-root{
+            width: initial;
+        }
+    }
+    p{
+        margin-bottom: 0 !important;
+        &.catchaError {
+            text-align: left;
+            color: ${primaryColors.errorMain};
+            margin-bottom: 15px !important;
+        }
+    }
+    .contactFormSubmitBtn{
+        padding: 5px 20px;
+    }
 }
 `
