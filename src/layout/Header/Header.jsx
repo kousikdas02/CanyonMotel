@@ -54,6 +54,12 @@ const Header = () => {
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+  const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+  };
 
   const drawer = (
     <Box className="mobileMenuDrawer">
@@ -61,7 +67,7 @@ const Header = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <NavLink to={item.path} onClick={toggleDrawer(false)} className={(navData) => (navData.isActive ? "active" : 'none')}>
+            <NavLink to={item.path} onClick={() => {toggleDrawer(false); scrollToTop()}} className={(navData) => (navData.isActive ? "active" : 'none')}>
               {item.name}
             </NavLink>
           </ListItem>
