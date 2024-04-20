@@ -332,6 +332,121 @@ const TermsConditions = () => {
 
                     </Container>
                 </Box>
+                <Box className="policy cmn_gap">
+                    <Container fixed>
+                        <Box className="cmn_head">
+                            <Typography variant='h2'>Cookie Statements</Typography>
+                        </Box>
+
+                        <Box className="policyAccordion">
+                            <Accordion expanded={expanded === 'faqpanel1'} onChange={handleChange('faqpanel1')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel1-content"
+                                    id="faqpanel1-header"
+                                >
+                                    Do you allow pets?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        Yes, we accept well-behaved pets in some rooms. All pets must be declared in advance. A separate pet fee applies ($25 per pet for your entire stay). If pets are not delcared or underdeclared, we will charge a $100 cleaning fee for each undeclared pet. Pets must be housebroken or a separate refundable deposit against cleaning needs to be made.
+                                    </Typography>
+                                    <Typography variant='body1'>
+                                        A pet fee is charged if a pet enters the room.
+                                    </Typography>
+                                    <Typography variant='body1'>
+                                        Nearly all of the pets that stay with us are well-behaved, however, to ensure the enjoyment of all guests, pets cannot be left alone in the rooms nor can they create a nuisance by making excessive noise.
+                                    </Typography>
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'faqpanel2'} onChange={handleChange('faqpanel2')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel2-content"
+                                    id="faqpanel2-header"
+                                >
+                                    What are your check-in/check-out times?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        Check-in begins at 4 PM. Check-out is 10 AM. We do allow earlier check-ins and later check-outs if arranged in advance. Sometimes an additional fee will apply. Please see our policies for more information.
+                                    </Typography>
+
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'faqpanel3'} onChange={handleChange('faqpanel3')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel3-content"
+                                    id="faqpanel3-header"
+                                >
+                                    Do you have a swimming pool?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        As with all of the smaller properties in town, we do not have a swimming pool. However, Pinedale has an excellent aquatic center that is open to the public and is located four blocks from the Teton Court. It offers an Olympic sized indoor pool with lap lanes, a shallow pool with slides and a lazy river, and a hot tub. It also offers a full gym, and a rock climbing wall.
+                                    </Typography>
+
+                                </AccordionDetails>
+                            </Accordion>
+
+                            <Accordion expanded={expanded === 'faqpanel4'} onChange={handleChange('faqpanel4')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel4-content"
+                                    id="faqpanel4-header"
+                                >
+                                    What hours are your office and lobby open?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        Between late May/early June and late September, the Teton Court office is open from 9 AM to 9 PM each day. We reside on the property so can arrange for arrivals after hours if necessary. Late arrivals can be arranged by calling or texting (307) 367-3367 or by emailing us in advance.
+                                    </Typography>
+
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'faqpanel5'} onChange={handleChange('faqpanel5')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel5-content"
+                                    id="faqpanel5-header"
+                                >
+                                    Are you open year round?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        No, we are a seasonal property and open from late May/early June to late September each year.
+                                    </Typography>
+
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'faqpanel6'} onChange={handleChange('faqpanel6')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="faqpanel6-content"
+                                    id="faqpanel6-header"
+                                >
+                                    Do your rooms have air conditioning and heat?
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>
+                                        All rooms have heating.
+                                    </Typography>
+                                    <Typography variant='body1'>
+                                        We do offer two types of rooms. Most of our rooms have quiet fans, but we also offer air conditioned rooms with 2 double beds.
+                                    </Typography>
+                                    <Typography variant='body1'>
+                                        Due to the high elevation (nearly 7200 ft, or 2200 meters above sea level) and the crisp, dry air of Pinedale, summer days are warm but summer nights usually drop to the upper 30s to low 40s Fahrenheit (4-7 degrees Celsius). Most local residents and many guests find that a fan is sufficient for a comfortable night's sleep.
+                                    </Typography>
+
+                                </AccordionDetails>
+                            </Accordion>
+
+
+                        </Box>
+
+                    </Container>
+                </Box>
             </TermsConditionsWrapperStyled>
         </Wrapper>
     )

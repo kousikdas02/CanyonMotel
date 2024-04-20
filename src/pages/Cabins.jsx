@@ -193,6 +193,57 @@ const cabinData = [
     ],
     linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
+  {
+    title: "Family Cabin",
+    subtitle: "2 Double Beds",
+    persons: "The Family Cabin are our largest rooms. These rooms sleep 1-4 (some rooms sleep more than 4)",
+    roomAmenitiesTitle: "Room Amenities :",
+    roomAmenitiesList: [
+      {
+        amenities: "A work desk or comfortable reading chair",
+      },
+      {
+        amenities: "two comfortable double/full sized beds",
+      },
+      {
+        amenities: "dining table",
+      },
+      {
+        amenities: "mini-fridge",
+      },
+      {
+        amenities: "microwave",
+      },
+      {
+        amenities: "kitchenette",
+      },
+      {
+        amenities: "television with Amazon FireStick",
+      },
+      {
+        amenities: "WiFi",
+      },
+      {
+        amenities: "a Keurig coffee maker with K-cups",
+      },
+      {
+        amenities: "Some rooms have showers and others have shower-tub combinations",
+      },
+      {
+        amenities: "Some have a separate sofa or love seat",
+      },
+
+    ],
+    roomSize: " Rooms vary in size from 250-450 sq. ft.",
+    cabinImageSliderList: [
+      assets.cabinImage1,
+      assets.cabinImage2,
+      assets.cabinImage3,
+      assets.cabinImage4,
+      assets.cabinImage5,
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+  },
 ]
 
 const TITLE = 'Teton Court Motel - Cabins';

@@ -132,14 +132,10 @@ const Footer = () => {
               <List disablePadding>
                 <ListItem>
                   <NavLink onClick={scrollToTop} to="/terms-conditions" className={(navData) => (navData.isActive ? "active" : 'none')}>
-                    Policies / Terms 
+                  Terms & Conditions   / Privacy & Cookie Statement
                   </NavLink>
                 </ListItem>
-                <ListItem>
-                  <NavLink onClick={scrollToTop} to="/terms-conditions" className={(navData) => (navData.isActive ? "active" : 'none')}>
-                  Conditions / Privacy and Cookies Statement
-                  </NavLink>
-                </ListItem>
+                
               </List>
             </Box>
           </Stack>
