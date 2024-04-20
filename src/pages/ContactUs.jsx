@@ -27,8 +27,8 @@ const ContactUs = () => {
 
   const form = useRef();
   const sendEmail = () => {
-    emailjs.sendForm('service_uf35xv6', 'template_a4oiauh', form.current, {
-      publicKey: 'T7Z7C8I5ICK-pOLNH',
+    emailjs.sendForm('service_e0mka4m', 'template_c34obs1', form.current, {
+      publicKey: '-JjGidklBNNToB1iq',
 
     })
       .then(
@@ -55,7 +55,7 @@ const ContactUs = () => {
     }
 
     if (typeof formFields["name"] !== "undefined") {
-      if (!formFields["name"].match(/^[a-zA-Z]{2,40}( [a-zA-Z]{2,40})+$/)) {
+      if (!formFields["name"].match(/^[a-zA-Z -]*$/)) {
         formIsValid = false;
         formErrors["name"] = "Only letters";
       }
@@ -175,28 +175,28 @@ const ContactUs = () => {
               <form ref={form} onSubmit={contactSubmit} >
                 <Grid container columnSpacing={4} rowSpacing={3}>
                   <Grid item lg={4} md={6} xs={12}>
-                    <label htmlFor="from_name">Name:</label>
+                    <label htmlFor="from_name">Name: <Typography variant='caption'>(Required)</Typography></label>
                     <TextField id="from_name" name="from_name" variant="outlined"
                       onChange={e => handleChange('name', e.target.value)} value={fields["name"] || ''}
                     />
                     <Typography variant='body1' className="errorMsg">{errors["name"]}</Typography>
                   </Grid>
                   <Grid item lg={4} md={6} xs={12}>
-                    <label htmlFor="from_email">Email:</label>
+                    <label htmlFor="from_email">Email: <Typography variant='caption'>(Required)</Typography></label>
                     <TextField id="from_email" name="from_email" variant="outlined"
                       onChange={e => handleChange('email', e.target.value)} value={fields["email"] || ''}
                     />
                     <Typography variant='body1' className="errorMsg">{errors["email"]}</Typography>
                   </Grid>
                   <Grid item lg={4} md={6} xs={12}>
-                    <label htmlFor="from_phone">Phone:</label>
+                    <label htmlFor="from_phone">Phone: <Typography variant='caption'>(Required)</Typography></label>
                     <TextField id="from_phone" type="tel" name="from_phone" variant="outlined"
                       onChange={e => handleChange('phone', e.target.value)} value={fields["phone"] || ''}
                     />
                     <Typography variant='body1' className="errorMsg">{errors["phone"]}</Typography>
                   </Grid>
                   <Grid item lg={12} md={12} xs={12}>
-                    <label htmlFor="from_message">Message:</label>
+                    <label htmlFor="from_message">Message: <Typography variant='caption'>(Required)</Typography></label>
                     <TextField multiline rows={3} id="from_message" name="from_message" variant="outlined"
                       onChange={e => handleChange('message', e.target.value)} value={fields["message"] || ''}
                     />
@@ -206,6 +206,7 @@ const ContactUs = () => {
                 {
                   !isCorrect === true &&
                   <Box className="customCaptcha">
+                    <Typography variant='body1' className='catchaInfoText'>Help us fight spam! Answer the simple math question in the following field:</Typography>
                     <Stack direction="row" spacing={2} alignItems="center">
                       <Typography variant='body1'>{num1} + {num2} =</Typography>
                       <TextField id="captcha" value={userAnswer || ''} name="captcha" variant="outlined" onChange={handleCaptchaChange} />

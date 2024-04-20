@@ -36,6 +36,14 @@ export const ContactUsWrapperStyled = styled(Box)`
         label{
             display: block;
             margin-bottom: 5px;
+
+            span{
+                color: ${primaryColors.errorMain};
+                font-size: 16px;
+                line-height: 1.5;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+            }
         }
         .MuiTextField-root{
             width: 100%;
@@ -126,13 +134,17 @@ export const ContactUsWrapperStyled = styled(Box)`
 .customCaptcha{
     padding-top: 30px;
     .MuiStack-root {
-        margin-bottom: 15px;
+        margin-bottom: 20px;
         .MuiTextField-root{
             width: initial;
         }
     }
     p{
         margin-bottom: 0 !important;
+        &.catchaInfoText{
+            text-align: left;
+            margin-bottom: 15px !important;
+        }
         &.catchaError {
             text-align: left;
             color: ${primaryColors.errorMain};
