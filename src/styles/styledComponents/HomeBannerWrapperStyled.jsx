@@ -44,6 +44,8 @@ z-index: 1;
 }
 .bannerCalendar{
     padding-top: 30px;
+    max-width: 650px;
+    margin: 0 auto;
     @media (max-width: 899px) {
         padding-top: 15px;
     }
@@ -84,6 +86,31 @@ z-index: 1;
                 }
             }
         }
+        .bannerCalendar_cmnInput{
+            border: 2px solid ${primaryColors.white};
+                    max-height: 44px;
+                    padding: 10.5px 15px;
+                    line-height: 1;
+                    height: initial;
+                    color: ${primaryColors.white};
+                    background-color: transparent;
+                    width: 100%;
+                    min-height: 44px;
+        }
+        .bannerCalendar_cmnSelect{
+            border: 2px solid ${primaryColors.white};
+                    max-height: 44px;
+                    padding: 10.5px 15px;
+                    line-height: 1;
+                    height: initial;
+                    color: ${primaryColors.white};
+                    background-color: transparent;
+                    width: 100%;
+                    min-height: 44px;
+        }
+         .bannerCalendar_cmnSelect option {
+            color: ${primaryColors.black};
+            }
     }
     .bannerCalendarSubmit{
         @media (max-width: 899px) {
@@ -102,5 +129,6 @@ z-index: 1;
             border-color: ${primaryColors.white};
         } */
     }
+    
 }
 `

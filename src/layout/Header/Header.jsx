@@ -12,7 +12,7 @@ import { Button, Container } from '@mui/material'
 import { Link, NavLink } from 'react-router-dom';
 import { assets } from '../../json/assets';
 import CallIcon from '@mui/icons-material/Call';
-import EmailIcon from '@mui/icons-material/Email';
+// import EmailIcon from '@mui/icons-material/Email';
 import CustomButton from '../../ui/CustomButton/CustomButton';
 const Header = () => {
   const drawerWidth = 240;
@@ -56,8 +56,8 @@ const Header = () => {
   };
   const scrollToTop = () => {
     window.scrollTo({
-        top: 0,
-        behavior: "smooth",
+      top: 0,
+      behavior: "smooth",
     });
   };
 
@@ -67,7 +67,7 @@ const Header = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <NavLink to={item.path} onClick={() => {toggleDrawer(false); scrollToTop()}} className={(navData) => (navData.isActive ? "active" : 'none')}>
+            <NavLink to={item.path} onClick={() => { toggleDrawer(false); scrollToTop() }} className={(navData) => (navData.isActive ? "active" : 'none')}>
               {item.name}
             </NavLink>
           </ListItem>
@@ -83,8 +83,13 @@ const Header = () => {
           <ListItem>
             <Link to="tel:(307) 367-3367"><i><CallIcon /></i> (307) 367-3367</Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link to="mailto:res@tetoncourt.com"><i><EmailIcon /></i> res@tetoncourt.com</Link>
+          </ListItem> */}
+          <ListItem>
+            Teton Court Motel <br />
+            <span style={{ fontSize: "15px" }}>123 E Magnolia St</span> <br />
+            <span style={{ fontSize: "15px" }}>Pinedale, WY 82941</span>
           </ListItem>
         </List>
 
