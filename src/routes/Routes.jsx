@@ -11,10 +11,10 @@ import ActivitiesDetails from '../pages/ActivitiesDetails'
 
 const AppLayout = () => (
     <>
-      <ScrollRestoration />
-      <Outlet />
+        <ScrollRestoration />
+        <Outlet />
     </>
-  );
+);
 // const Routes = createBrowserRouter( 
 //     [
 //     {
@@ -55,30 +55,27 @@ const AppLayout = () => (
 
 const Routes = createBrowserRouter([
     {
-      element: <AppLayout />,
-      children: [
-        {
-          path: '/',
-          children:    [
+        element: <AppLayout />,
+        children: [
             {
                 path: "/",
-                element: <Home/>
+                element: <Home />
             },
             {
                 path: "/our-rooms",
-                element: <Cabins/>
+                element: <Cabins />
             },
             {
                 path: "/your-stay",
-                element: <PropertyDetails/>
+                element: <PropertyDetails />
             },
             {
                 path: "/contact-us",
-                element: <ContactUs/>
+                element: <ContactUs />
             },
             {
                 path: "/local-adventures",
-                element: <Activities/>
+                element: <Activities />
             },
             {
                 path: "/terms-conditions",
@@ -90,14 +87,13 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/local-adventures/attractions",
-                element: <ActivitiesDetails/>
+                element: <ActivitiesDetails />
             },
-        
+
         ]
-        },
-        
-      ]
     },
+
+
   ]);
 
 export default Routes

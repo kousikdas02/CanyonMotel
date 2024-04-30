@@ -47,7 +47,7 @@ function a11yProps(index) {
 const ActivitiesDetails = () => {
     const [value, setValue] = React.useState(0);
 
-    const handleChange = ( newValue) => {
+    const handleChange = (event, newValue) => {
         setValue(newValue);
     };
     return (
