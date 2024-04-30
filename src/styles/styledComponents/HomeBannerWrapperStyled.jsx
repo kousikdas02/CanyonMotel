@@ -43,9 +43,12 @@ z-index: 1;
     }
 }
 .bannerCalendar{
-    padding-top: 30px;
+    /* padding-top: 30px; */
+    padding: 25px 25px;
     max-width: 650px;
-    margin: 0 auto;
+    margin: 30px auto 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
     @media (max-width: 899px) {
         padding-top: 15px;
     }
@@ -113,6 +116,7 @@ z-index: 1;
             }
     }
     .bannerCalendarSubmit{
+        margin-top: 5px;
         @media (max-width: 899px) {
             width: 100%;
             margin-left: 0;

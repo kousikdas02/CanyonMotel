@@ -8,6 +8,7 @@ import NewsLetter from '../components/NewsLetter/NewsLetter'
 import { Box, Container, Grid, Typography } from '@mui/material'
 import CustomButton from '../ui/CustomButton/CustomButton'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
+import { useNavigate } from 'react-router-dom'
 
 export const activityData = [
   {
@@ -21,7 +22,7 @@ export const activityData = [
         eachText: "For more information on Outlaw Outfitters, click on the Learn More tab below to visit their website."
       },
     ],
-    linkPath: "https://www.google.com/",
+    linkPath: "/local-adventures/attractions",
     aos: "normal",
   },
   {
@@ -32,7 +33,7 @@ export const activityData = [
         eachText: "Always one of the top-rated drives in North America commonly referred to as the Three Sisters or 3 Twisted Sisters, Highways 335, 336, and 337 has its beginnings in the town of Medina.  This 100-mile loop is, without a doubt, among the best, most challenging motorcycle rides in the state. The route follows canyons and climbs jagged, steep hills; the roads offer many tight, twisty curves with shear drop offs alongside and not much in the way of guardrails. In one 15-mile section, there are approximately 65 curves! Even the most experienced riders will squeeze that handle just a bit tighter.",
       },
     ],
-    linkPath: "https://www.google.com/",
+    linkPath: "/local-adventures/attractions",
     aos: "reverse",
   },
   {
@@ -46,7 +47,7 @@ export const activityData = [
         eachText: "For more information on the Spirit of Texas, click on the Learn More tab below to visit their website.",
       },
     ],
-    linkPath: "https://www.google.com/",
+    linkPath: "/local-adventures/attractions",
     aos: "normal",
   },
   {
@@ -60,7 +61,7 @@ export const activityData = [
         eachText: "For more information on TJ's @ The Old Forge, click on the Learn More tab below to visit their website.",
       },
     ],
-    linkPath: "https://www.google.com/",
+    linkPath: "/local-adventures/attractions",
     aos: "reverse",
   },
   {
@@ -74,13 +75,14 @@ export const activityData = [
         eachText: "For more information on 11th Street Cowboy Bar, click on the Learn More tab below to visit their website.",
       },
     ],
-    linkPath: "https://www.google.com/",
+    linkPath: "/local-adventures/attractions",
     aos: "normal",
   },
 ]
 
-const TITLE = 'Teton Court Motel - Activities';
+const TITLE = 'Teton Court Motel - Local Adventures';
 const Activities = () => {
+  const navigate = useNavigate();
   return (
     <Wrapper>
       <HelmetProvider>
@@ -115,7 +117,7 @@ const Activities = () => {
                             })
                           }
                         </Box>
-                        <CustomButton buttonColor="black" onClick={() => window.open(`${eachData.linkPath}`, '_blank')}>
+                        <CustomButton buttonColor="black" onClick={() => navigate(eachData.linkPath)}>
                           LEARN MORE
                         </CustomButton>
                       </Box>

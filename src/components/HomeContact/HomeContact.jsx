@@ -3,8 +3,10 @@ import { HomeContactWrapperStyled } from '../../styles/styledComponents/HomeCont
 import { Box, Container, Grid, Typography } from '@mui/material'
 import { assets } from '../../json/assets'
 import CustomButton from '../../ui/CustomButton/CustomButton';
+import { useNavigate } from 'react-router-dom';
 
 const HomeContact = () => {
+    const navigate = useNavigate();
   return (
     <HomeContactWrapperStyled className='cmn_gap'>
         <Container fixed>
@@ -21,7 +23,7 @@ const HomeContact = () => {
                     <Typography variant='body1'>
                         This historic rustic motel located in the heart of the "Cowboy Capital Of The World", is truly one of a kind. 
                     </Typography>
-                    <CustomButton butttonType="black">
+                    <CustomButton onClick={() => navigate("/contact-us")}>
                         CONNECT WITH US
                     </CustomButton>
                 </Grid>
