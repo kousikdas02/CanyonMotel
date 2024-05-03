@@ -6,7 +6,6 @@ import PropertyDetails from "../pages/PropertyDetails"
 import ContactUs from "../pages/ContactUs"
 import Activities from "../pages/Activities"
 import TermsConditions from '../pages/TermsConditions'
-import OurStory from '../pages/OurStory'
 import ActivitiesDetails from '../pages/ActivitiesDetails'
 import SpecialDeals from '../pages/SpecialDeals'
 
