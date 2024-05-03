@@ -2,7 +2,7 @@ import { Box, styled } from "@mui/material";
 import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const OurLocationWrapperStyled = styled(Box)`
-border-top: 5px solid ${primaryColors.black};
+border-top: 5px solid ${primaryColors.steelBlue};
 background-color: rgba(255,255,255,0.85);
     p{
         text-align: center;

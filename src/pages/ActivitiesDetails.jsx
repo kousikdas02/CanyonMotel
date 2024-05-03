@@ -9,7 +9,7 @@ import { Box, Container, Grid, List, ListItem, Tab, Tabs, Typography } from '@mu
 import { Link } from 'react-router-dom';
 import CustomButton from '../ui/CustomButton/CustomButton';
 
-const TITLE = 'Teton Court Motel - Local Adventures Attractions';
+const TITLE = 'Canyon Motel - Local Adventures Attractions';
 
 function CustomTabPanel(props) {
     const { children, value, index, ...other } = props;

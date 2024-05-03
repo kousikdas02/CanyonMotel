@@ -5,7 +5,7 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const CabinsWrapperStyled = styled(Box)`
 .eachCabin{
-    border-bottom: 5px solid ${primaryColors.black};
+    border-bottom: 5px solid ${primaryColors.steelBlue};
     position: relative;
     .eachCabinInner{
         position: relative;

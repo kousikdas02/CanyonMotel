@@ -7,7 +7,7 @@ export const ActivitiesWrapperStyled = styled(Box)`
     }
     .activityWrap{
         .activityEach{
-            border-bottom: 5px solid ${primaryColors.black};
+            border-bottom: 5px solid ${primaryColors.steelBlue};
 
             &:last-child{
                 border-bottom: 0;

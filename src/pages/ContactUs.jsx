@@ -9,7 +9,7 @@ import CustomButton from '../ui/CustomButton/CustomButton';
 import { Helmet, HelmetProvider } from 'react-helmet-async';
 import emailjs from '@emailjs/browser';
 import * as yup from 'yup' // importing functions from yup library
-const TITLE = 'Teton Court Motel - Contact Us';
+const TITLE = 'Canyon Motel - Contact Us';
 
 
 
@@ -170,7 +170,7 @@ const ContactUs = () => {
                 </Typography>
               </Box>
               <Typography variant='body1'>
-                Interested in booking your next stay at Teton Court Motel? We'd love to hear from you - contact us using the form below, and we'll get right back to you. We look forward to serving you.
+                Interested in booking your next stay at Canyon Motel? We'd love to hear from you - contact us using the form below, and we'll get right back to you. We look forward to serving you.
               </Typography>
               <form ref={form} onSubmit={contactSubmit} >
                 <Grid container columnSpacing={4} rowSpacing={3}>
@@ -238,7 +238,8 @@ const ContactUs = () => {
             <Container maxWidth="xl">
               <Grid container columnSpacing={6} rowSpacing={3}>
                 <Grid item md={6} xs={12} className='contactLocationCol'>
-                  <iframe className='contactLocationMap' title='Teton Court Motel location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2924.2327222041195!2d-109.86190152438617!3d42.86793190286542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875796abc23c9e27%3A0xc1608bf7c8e5a7fd!2sTeton%20Court%20Motel!5e0!3m2!1sen!2sin!4v1712902104878!5m2!1sen!2sin" width="600" height="450" style={{ border: 0 }} ></iframe>
+               
+                  <iframe className='contactLocationMap' title='Canyon Motel location' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3053.108991537721!2d-106.10590002400603!3d40.07298087149702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876a217b91158a61%3A0xccc6684bc327e6b9!2sCanyon%20Motel!5e0!3m2!1sen!2sin!4v1714733641605!5m2!1sen!2sin" width="600" height="450" style={{border: 0}} ></iframe>
                 </Grid>
                 <Grid item md={6} xs={12} className='contactUsInfoCol'>
                   <Box className="contactUsInfo">

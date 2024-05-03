@@ -30,8 +30,8 @@ const Header = () => {
       path: "/your-stay",
     },
     {
-      name: "Our Story",
-      path: "/our-story",
+      name: "Special Deals",
+      path: "/special-deals",
     },
     {
       name: "Local Adventures",
@@ -81,15 +81,15 @@ const Header = () => {
       <Box className="hamburgerContactList_wrap">
         <List disablePadding className='hamburgerContactList'>
           <ListItem>
-            <Link to="tel:(307) 367-3367"><i><CallIcon /></i> (307) 367-3367</Link>
+            <Link to="tel:970-725-3395"><i><CallIcon /></i> 970-725-3395</Link>
           </ListItem>
           {/* <ListItem>
             <Link to="mailto:res@tetoncourt.com"><i><EmailIcon /></i> res@tetoncourt.com</Link>
           </ListItem> */}
           <ListItem>
-            Teton Court Motel <br />
-            <span style={{ fontSize: "15px" }}>123 E Magnolia St</span> <br />
-            <span style={{ fontSize: "15px" }}>Pinedale, WY 82941</span>
+            Canyon Motel <br />
+            <span style={{ fontSize: "15px" }}>221 Byers Avenue</span> <br />
+            <span style={{ fontSize: "15px" }}>Hot Sulphur Springs, CO  80451</span>
           </ListItem>
         </List>
 
@@ -140,7 +140,7 @@ const Header = () => {
                   </NavLink >
                 </ListItem>
                 <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/your-stay">Your Stay</NavLink ></ListItem>
-                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/our-story">Our Story</NavLink ></ListItem>
+                <ListItem><NavLink className={(navData) => (navData.isActive ? "active" : '')} to="/special-deals">Special Deals</NavLink ></ListItem>
               </List>
 
               <NavLink className={(navData) => (navData.isActive ? "active headerLogo" : 'headerLogo')} to="/" ><img src={assets.logo} alt="header logo" /></NavLink >

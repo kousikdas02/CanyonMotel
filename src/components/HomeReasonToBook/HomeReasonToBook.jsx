@@ -6,6 +6,7 @@ import { assets } from '../../json/assets';
 import CameraIcon from '../../ui/icons/CameraIcon';
 import BestPriceIcon from '../../ui/icons/BestPriceIcon';
 import { HomeReasonToBookWrapperStyled } from '../../styles/styledComponents/HomeReasonToBookWrapperStyled';
+import { primaryColors } from '../../mui-theme/_muiPalette';
 
 
 export const ReasonToBookData = [
@@ -51,7 +52,7 @@ const HomeReasonToBook = () => {
                     {
                         ReasonToBookData.map((item, index) => (
                             <Grid item xs={12} md={6} key={index}>
-                                <Box className={item.hasImage === null ? " bookReasonCard" : "bookReasonCard hasBackdrop"} style={ item.hasImage === null ? { backgroundColor: "#000",} : {backgroundImage: `url(${item.hasImage})`, backgroundPosition: "center", backgroundSize: "cover"}}>
+                                <Box className={item.hasImage === null ? " bookReasonCard" : "bookReasonCard hasBackdrop"} style={ item.hasImage === null ? { backgroundColor: primaryColors.steelBlue,} : {backgroundImage: `url(${item.hasImage})`, backgroundPosition: "center", backgroundSize: "cover"}}>
                                     <Box className="bookReasonCardnIcon">
                                         {item.icon}
                                     </Box>

@@ -32,11 +32,11 @@ export const primaryColors = {
   textDanger: "#9B3858",
   dangerColor: "#FFECF2",
 
- lightBlue: "#93D2ED",
+ lightBlue: "#086839",
  tan: "#CF823F",
-buttonPrimary: "#613F35",
+buttonPrimary: "#C36637",
 buttonSecondary: "#1C6EBA ",
-steelBlue: "#6E9DB1",
+steelBlue: "#086839",
 };
 
  

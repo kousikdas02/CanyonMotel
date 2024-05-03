@@ -16,7 +16,7 @@ export const WrapperStyled = styled(Box)`
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
-            color: ${primaryColors.black};
+            color: ${primaryColors.white};
             font-size: 18px;
             font-weight: 600;
             min-width: initial;
@@ -24,7 +24,7 @@ export const WrapperStyled = styled(Box)`
             padding: 0;
         }
         p{
-            color: ${primaryColors.black};
+            color: ${primaryColors.white};
             margin-bottom: 0;
             font-size: 20px;
             font-weight: 700;

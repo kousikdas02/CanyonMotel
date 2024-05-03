@@ -71,7 +71,7 @@ export const TermsConditionsWrapperStyled = styled(Box)`
             }
         }
         .policy{
-            border-bottom: 5px solid ${primaryColors.black};
+            border-bottom: 5px solid ${primaryColors.steelBlue};
             background-color: ${primaryColors.white};
             &:last-child{
                 border-bottom: 0;

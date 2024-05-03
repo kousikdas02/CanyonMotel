@@ -19,7 +19,7 @@ export const propDetailsFeatureData = [
     aos: "normal",
     textContent: [
       {
-        eachText: "The Teton Court Motel is your clean, comfortable, affordable lodging option in Pinedale, Wyoming. A refurbished hotel near the center of Pinedale and just minutes from the Bridger Wilderness, the Wind River Mountain Range, and visiting the Museum of the Mountain Man. Other nearby options include exploring or boating on Fremont Lake, Green River Lake and Island Lake, fishing the Green River, or relaxing in the Granite Hot Springs.",
+        eachText: "The Canyon Motel is your clean, comfortable, affordable lodging option in Pinedale, Wyoming. A refurbished hotel near the center of Pinedale and just minutes from the Bridger Wilderness, the Wind River Mountain Range, and visiting the Museum of the Mountain Man. Other nearby options include exploring or boating on Fremont Lake, Green River Lake and Island Lake, fishing the Green River, or relaxing in the Granite Hot Springs.",
       },
       {
         eachText: "We are located on a quiet street near the center of Pinedale, within walking distance of restaurants, supermarkets, and bars. We are one block off US 191 as you go to/from Jackson (1.5 hours) and the Grand Teton National Park (2 hours) and south entrance of Yellowstone National Park (2.5 hours).",
@@ -35,7 +35,7 @@ export const propDetailsFeatureData = [
         eachText: "Each of our 17 rooms features private entry direct from the parking lot, private bathrooms, microwaves, small fridges, flat-screen TVs and complimentary WiFi. Eight of our rooms feature kitchenettes. Each room has been completely remodeled, with new carpet, mattresses, furniture, and bedding.",
       },
       {
-        eachText: "The Teton Court Motel is ideal for those who seek a clean and comfortable room at an affordable price.",
+        eachText: "The Canyon Motel is ideal for those who seek a clean and comfortable room at an affordable price.",
       }
     ],
     linkPath: '/our-rooms',
@@ -47,7 +47,7 @@ export const propDetailsFeatureData = [
     aos: "normal",
     textContent: [
       {
-        eachText: "The Teton Court Motel offers clean and comfortable rooms near the heart of Pinedale. When booking through our website, you can obtain a confirmed booking with a 5% discount (compared with rates found on websites such as Booking.com and Expedia), easier (and more generous) cancellation policies, better guidance to get the best available room for your needs, and for those bringing their furry friends, a faster confirmation that a pet-friendly room is available.",
+        eachText: "The Canyon Motel offers clean and comfortable rooms near the heart of Pinedale. When booking through our website, you can obtain a confirmed booking with a 5% discount (compared with rates found on websites such as Booking.com and Expedia), easier (and more generous) cancellation policies, better guidance to get the best available room for your needs, and for those bringing their furry friends, a faster confirmation that a pet-friendly room is available.",
       },
     ],
     bookNow : true,
@@ -74,7 +74,7 @@ export const propertyAmenities = [
     eachAmenities: "Book with Us and Save",
   },
 ]
-const TITLE = 'Teton Court Motel - Property Details';
+const TITLE = 'Canyon Motel - Property Details';
 const PropertyDetails = () => {
   const navigate = useNavigate();
   return (

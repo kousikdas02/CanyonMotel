@@ -16,7 +16,7 @@ import NewsLetter from '../components/NewsLetter/NewsLetter'
 import { assets } from '../json/assets'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
-const TITLE = 'Teton Court Motel - Home';
+const TITLE = 'Canyon Motel - Home';
 
 const Home = () => {
   return (

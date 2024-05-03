@@ -20,8 +20,8 @@ export const foooterSiteMaop = [
     path: "/your-stay",
   },
   {
-    name: "Our Story",
-    path: "/our-story",
+    name: "Special Deals",
+    path: "/special-deals",
   },
   {
     name: "Local Adventures",
@@ -60,9 +60,8 @@ const Footer = () => {
                 (UPS & FedEx for all gear and packages)
               </Typography>
               <Typography variant='body1' className='footerLocationDetails'>
-                Teton Court Motel <br />
-                123 E Magnolia Street <br />
-                Pinedale, WY 82941
+              221 Byers Avenue <br />
+Hot Sulphur Springs, CO  80451
               </Typography>
               <Typography variant='body1'>
                 <b>Mailing Address:</b>
@@ -70,16 +69,15 @@ const Footer = () => {
                 (USPS mail only, no packages)
               </Typography>
               <Typography variant='body1'>
-                Teton Court Motel <br />
-                PO Box 582 <br />
-                Pinedale, WY 82941
+              PO Box 109 <br />
+Hot Sulphur Springs, CO  80451
               </Typography>
               <List disablePadding className='footerConactLinkList'>
                 <ListItem>
-                  <Link to="tel:(307) 367-3367"><i><CallIcon /></i> (307) 367-3367</Link>
+                  <Link to="tel:970-725-3395"><i><CallIcon /></i> 970-725-3395</Link>
                 </ListItem>
                 <ListItem>
-                  <Link to="mailto:res@tetoncourt.com"><i><EmailIcon /></i> res@tetoncourt.com</Link>
+                  <Link to="info@canyonmotelcolorado.com"><i><EmailIcon /></i> info@canyonmotelcolorado.com</Link>
                 </ListItem>
               </List>
             </Box>
@@ -124,7 +122,7 @@ const Footer = () => {
             <Box className="footerBotLeft">
               <List disablePadding>
                 <ListItem>
-                  &copy; 2024 <Link onClick={scrollToTop} to="/">Teton Court Motel.</Link> All rights reserved.
+                  &copy; 2024 <Link onClick={scrollToTop} to="/">Canyon Motel.</Link> All rights reserved.
                 </ListItem>
               </List>
             </Box>

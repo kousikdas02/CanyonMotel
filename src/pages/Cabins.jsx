@@ -14,176 +14,241 @@ import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 const cabinData = [
   {
-    title: "Deluxe King",
-    subtitle: "1 King Bed",
-    persons: "The Deluxe King rooms sleep 1-2 adults",
+    title: "Deluxe Queen Room with Kitchenette",
+    subtitle: "2 Queen sized beds",
+    persons: "Deluxe Queen Room sleep maximum 6 adults",
     roomAmenitiesTitle: "Room Amenities :",
     roomAmenitiesList: [
       {
-        amenities: "A work desk or comfortable reading chair",
+        amenities: "Cribs upon request",
       },
       {
-        amenities: "one comfortable pillow-top king bed",
+        amenities: "Cable television",
       },
       {
-        amenities: "a fridge and microwave",
+        amenities: "Microwave",
       },
       {
-        amenities: "a television with Amazon Firestick",
+        amenities: "A kitchenette with stove top",
       },
       {
-        amenities: "WiFi",
+        amenities: "110-120 volt circuits",
       },
       {
-        amenities: "a Keurig coffee maker with K-cups",
+        amenities: "Hairdryer",
       },
       {
-        amenities: "bathrooms with shower-tub combinations",
+        amenities: "Wireless internet (WiFi)",
+      },
+      {
+        amenities: "Refigerator",
       },
 
     ],
-    roomSize: "Rooms are approximately 190 sq. ft. One room offers a pull-out loveseat-sized sofa.",
+    roomSize: "280ft2, include 2 Queen sized beds, both mattress were updated to Serta Presidential Suite II Pillow Top in May 2017, the mattress was worth $1,300.00; 1 sofa rolls out to a double bed. ",
     cabinImageSliderList: [
       assets.cabinImage1,
       assets.cabinImage2,
       assets.cabinImage3,
-      assets.cabinImage4,
-      assets.cabinImage5,
     ],
     linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
-    title: "Deluxe Double",
-    subtitle: "2 Double Beds",
-    persons: "The Deluxe Double sleeps 1-4 adults",
+    title: "Queen Room with Two Queen Beds",
+    subtitle: "2 Queen sized beds",
+    persons: "Queen Room with Two Queen Beds sleeps maximum 4 adults",
     roomAmenitiesTitle: "Room Amenities :",
     roomAmenitiesList: [
       {
-        amenities: "A work desk or comfortable reading chair",
+        amenities: "Cribs upon request",
       },
       {
-        amenities: " two comfortable double/full sized beds",
+        amenities: "Cable television",
       },
       {
-        amenities: "mini-fridge",
+        amenities: "Hairdryer",
       },
       {
-        amenities: "microwave",
+        amenities: "Wireless internet (WiFi)",
       },
       {
-        amenities: "kitchenette",
+        amenities: "Telephone",
       },
       {
-        amenities: "television with Amazon FireStick",
+        amenities: "Refrigerator",
       },
       {
-        amenities: "WiFi",
+        amenities: "110-120 volt circuits",
       },
       {
-        amenities: "a Keurig coffee maker with K-cups",
+        amenities: "Coffee maker",
       },
       {
-        amenities: "full bathroom with tub and shower",
+        amenities: "Microwave",
+      },
+      {
+        amenities: "Pay-per-view channels",
+      },
+      {
+        amenities: "Free toiletries",
+      },
+      {
+        amenities: "Alarm clock",
       },
 
     ],
-    roomSize: "Approximately 220 sq. ft.",
+    roomSize: "288 ft2, include 2 Queen sized beds, both mattress were updated to Serta Presidential Suite II Pillow Top at  May 2017, mattress was worth $1,300.00.  This room has shower, has a seating area and a flat-screen cable TV with a DVD player. A microwave, a refrigerator and coffee-making facilities are also provided. ",
     cabinImageSliderList: [
       assets.cabinImage1,
       assets.cabinImage2,
       assets.cabinImage3,
-      assets.cabinImage4,
-      assets.cabinImage5,
     ],
     linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
-    title: "AirCon Deluxe Double",
+    title: "King Room with Spa Bath",
     subtitle: "2 Double Beds",
-    persons: "Similar to our Deluxe Double room, but with Air Conditioning. The rooms sleep 1-4 adults",
+    persons: "The rooms sleep maximum 2 adults",
     roomAmenitiesTitle: "Room Amenities :",
     roomAmenitiesList: [
       {
-        amenities: "A work desk or comfortable reading chair",
+        amenities: "Cribs upon request",
       },
       {
-        amenities: " two comfortable double/full sized beds",
+        amenities: "Cable television - fee",
       },
       {
-        amenities: "mini-fridge",
+        amenities: "Coffee maker",
       },
       {
-        amenities: "microwave",
+        amenities: "Microwave",
       },
       {
-        amenities: "kitchenette",
+        amenities: "Pay-per-view channels",
       },
       {
-        amenities: "television with Amazon FireStick",
+        amenities: "Spa tub",
       },
       {
-        amenities: "WiFi",
+        amenities: "Alarm clock",
       },
       {
-        amenities: "a Keurig coffee maker with K-cups",
+        amenities: "Refrigerator",
       },
       {
-        amenities: "full bathroom with tub and shower",
+        amenities: "110-120 volt circuits",
+      },
+      {
+        amenities: "Ceiling fan",
+      },
+      {
+        amenities: "Hairdryer",
+      },
+      {
+        amenities: "Wireless internet (WiFi)",
+      },
+      {
+        amenities: "Telephone",
+      },
+      {
+        amenities: "Free toiletries",
       },
 
     ],
-    roomSize: "Approximately 220 sq. ft.",
+    roomSize: "King Room with Spa Bath is our nicest room, many guests love it. This room has 1 King Sized bed, mattress is Serta Presidential Suite II Pillow Top, very comfortable. It also has a Jetted tub, the bathroom is very nice.",
     cabinImageSliderList: [
       assets.cabinImage1,
       assets.cabinImage2,
       assets.cabinImage3,
-      assets.cabinImage4,
-      assets.cabinImage5,
     ],
     linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
-    title: "Superior Double",
-    subtitle: "2 Double Beds",
+    title: "Basic Queen Bed",
+    subtitle: " The rooms sleep maximum 2 adults",
     persons: "The Superior Doubles are our largest rooms. These rooms sleep 1-4 (some rooms sleep more than 4)",
     roomAmenitiesTitle: "Room Amenities :",
     roomAmenitiesList: [
       {
-        amenities: "A work desk or comfortable reading chair",
+        amenities: "Cribs upon request",
+      },
+      {
+        amenities: "Cable television",
+      },
+      {
+        amenities: "Hairdryer",
+      },
+      {
+        amenities: "Wireless internet (WiFi)",
+      },
+      {
+        amenities: "110-120 volt circuits",
+      },
+      {
+        amenities: "Ceiling fan",
+      },
+      {
+        amenities: "Microwave",
+      },
+      {
+        amenities: "Refridgerator",
+      },
+      
+
+    ],
+    roomSize: "The room size is very small, good for 1 person, Okay for 2 people. But both rooms, we updated carpet , mattress at May 2017, mattress are Serta Presidential Suite II Pillow Top, comfortable. For room 6, the bathroom was remodeled at May 2017, has nice shower. Both rooms, have mini fridge, microwave, flat screen tv. ",
+    cabinImageSliderList: [
+      assets.cabinImage1,
+      assets.cabinImage2,
+      assets.cabinImage3,
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+  },
+  {
+    title: "King Room",
+    subtitle: "1 King sized bed",
+    persons: "The rooms sleep maximum 2 adults",
+    roomAmenitiesTitle: "Room Amenities :",
+    roomAmenitiesList: [
+      {
+        amenities: "Cribs upon request",
       },
       {
         amenities: "two comfortable double/full sized beds",
       },
       {
-        amenities: "dining table",
+        amenities: "Cable television",
       },
       {
-        amenities: "mini-fridge",
+        amenities: "Microwave",
       },
       {
-        amenities: "microwave",
+        amenities: "Pay-per-view channels",
       },
       {
-        amenities: "kitchenette",
+        amenities: "Free toiletries",
       },
       {
-        amenities: "television with Amazon FireStick",
+        amenities: "Alarm clock",
       },
       {
-        amenities: "WiFi",
+        amenities: "110-120 volt circuits",
       },
       {
-        amenities: "a Keurig coffee maker with K-cups",
+        amenities: "Hairdryer",
       },
       {
-        amenities: "Some rooms have showers and others have shower-tub combinations",
+        amenities: "Wireless internet (WiFi)",
       },
       {
-        amenities: "Some have a separate sofa or love seat",
+        amenities: "Telephone",
+      },
+      {
+        amenities: "Refrigerator",
       },
 
     ],
-    roomSize: " Rooms vary in size from 250-450 sq. ft.",
+    roomSize: "Room include 1 King sized bed and a chair pull out a twin sized bed.  The mattress was updated to Serta Presidential Suite II Pillow Top at May 2017.  This room features mountain views, a private entrance and a flat-screen cable TV with a DVD player. A microwave, a refrigerator and coffee-making facilities are also provided. ",
     cabinImageSliderList: [
       assets.cabinImage1,
       assets.cabinImage2,
@@ -194,47 +259,110 @@ const cabinData = [
     linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
   },
   {
-    title: "Family Cabin",
-    subtitle: "2 Double Beds",
-    persons: "The Family Cabin are our largest rooms. These rooms sleep 1-4 (some rooms sleep more than 4)",
+    title: "Standard Room",
+    subtitle: "1 Queen and 1 Double beds",
+    persons: "The rooms sleep maximum 4 adults",
     roomAmenitiesTitle: "Room Amenities :",
     roomAmenitiesList: [
       {
-        amenities: "A work desk or comfortable reading chair",
+        amenities: "Cribs upon request",
       },
       {
-        amenities: "two comfortable double/full sized beds",
+        amenities: "Cable television",
       },
       {
-        amenities: "dining table",
+        amenities: "Hairdryer",
       },
       {
-        amenities: "mini-fridge",
+        amenities: "AM / FM radio",
       },
       {
-        amenities: "microwave",
+        amenities: "Pay-per-view channels",
       },
       {
-        amenities: "kitchenette",
+        amenities: "Toiletries",
       },
       {
-        amenities: "television with Amazon FireStick",
+        amenities: "Outdoor dining area",
       },
       {
-        amenities: "WiFi",
+        amenities: "Coffee maker",
       },
       {
-        amenities: "a Keurig coffee maker with K-cups",
+        amenities: "Microwave",
       },
       {
-        amenities: "Some rooms have showers and others have shower-tub combinations",
+        amenities: "Wireless internet (WiFi)",
       },
       {
-        amenities: "Some have a separate sofa or love seat",
+        amenities: "Telephone",
+      },
+      {
+        amenities: "Alarm clock",
+      },
+      {
+        amenities: "Refrigerator",
       },
 
     ],
-    roomSize: " Rooms vary in size from 250-450 sq. ft.",
+    roomSize: "Room has 1 Queen and 1 Double beds, queen mattress was updated to Serta Presidential Suite II Pillow Top May 2017, worth $1,300. Queen bed and Double bed are not side by side, but 90 degree.  Rooms feature mountain and city view, a private entrance and a flat-screen cable TV with a DVD player. A microwave, a refrigerator and coffee-making facilities are also provided.",
+    cabinImageSliderList: [
+      assets.cabinImage1,
+      assets.cabinImage2,
+      assets.cabinImage3,
+      assets.cabinImage4,
+      assets.cabinImage5,
+    ],
+    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+  },
+  {
+    title: "King Room with Kitchennette",
+    subtitle: "1 king sized bed",
+    persons: "The rooms sleep maximum 4 adults",
+    roomAmenitiesTitle: "Room Amenities :",
+    roomAmenitiesList: [
+      {
+        amenities: "Cribs upon request",
+      },
+      {
+        amenities: "Cable television",
+      },
+      {
+        amenities: "Hairdryer",
+      },
+      {
+        amenities: "AM / FM radio",
+      },
+      {
+        amenities: "Pay-per-view channels",
+      },
+      {
+        amenities: "Toiletries",
+      },
+      {
+        amenities: "Outdoor dining area",
+      },
+      {
+        amenities: "Coffee maker",
+      },
+      {
+        amenities: "Microwave",
+      },
+      {
+        amenities: "Wireless internet (WiFi)",
+      },
+      {
+        amenities: "Telephone",
+      },
+      {
+        amenities: "Alarm clock",
+      },
+      {
+        amenities: "Refrigerator",
+      },
+
+    ],
+    roomSize: "Has 1 king sized bed, with kitchen. The mattress is Serta Presidential Suite II  Pilow Top, comfortable. Room has shower, mini fridge, microwave and flat screen tv.",
     cabinImageSliderList: [
       assets.cabinImage1,
       assets.cabinImage2,
@@ -246,7 +374,7 @@ const cabinData = [
   },
 ]
 
-const TITLE = 'Teton Court Motel - Cabins';
+const TITLE = 'Canyon Motel - Cabins';
 const Cabins = () => {
   return (
     <Wrapper>

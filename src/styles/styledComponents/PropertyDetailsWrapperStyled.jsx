@@ -11,7 +11,7 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
 
 .propDetailsFeatureWrap{
     .propDetailsFeatureEach{
-        border-bottom: 5px solid ${primaryColors.black};
+        border-bottom: 5px solid ${primaryColors.steelBlue};
 
         &:last-child{
             border-bottom: 0;
@@ -55,7 +55,7 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
     }
 
     .ourGround{
-        background-color: ${primaryColors.black};
+        background-color: ${primaryColors.steelBlue};
         .ourGroundImg{
             display: flex;
             line-height: 0;
@@ -130,7 +130,7 @@ export const PropertyDetailsWrapperStyled = styled(Box)`
         text-align: center;
         background-color: rgba(255,255,255,0.85);
         .bookingRulesInner{
-            background-color: ${primaryColors.black};
+            background-color: ${primaryColors.steelBlue};
             padding-left: 30px;
             padding-right: 30px;
             .cmn_head{

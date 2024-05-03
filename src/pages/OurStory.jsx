@@ -7,7 +7,7 @@ import Wrapper from '../layout/Wrapper/Wrapper'
 import { Helmet, HelmetProvider } from 'react-helmet-async'
 
 
-const TITLE = 'Teton Court Motel - Our Story';
+const TITLE = 'Canyon Motel - Our Story';
 const OurStory = () => {
   return (
     <Wrapper>

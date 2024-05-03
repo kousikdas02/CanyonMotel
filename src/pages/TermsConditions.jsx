@@ -6,7 +6,7 @@ import Wrapper from '../layout/Wrapper/Wrapper'
 import { Accordion, AccordionDetails, AccordionSummary, Box, Container, List, ListItem, Typography } from '@mui/material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Helmet, HelmetProvider } from 'react-helmet-async'
-const TITLE = 'Teton Court Motel - Terms and Conditions';
+const TITLE = 'Canyon Motel - Terms and Conditions';
 const TermsConditions = () => {
     const [expanded, setExpanded] = useState(false);
 
@@ -34,52 +34,16 @@ const TermsConditions = () => {
                                     aria-controls="panel1-content"
                                     id="panel1-header"
                                 >
-                                    Booking and Cancellation Policies
+                                    Age Requirements
                                 </AccordionSummary>
 
                                 
                                 <AccordionDetails>
-                                    <Typography variant='h6'>Cancellation Policy:</Typography>
+                              
                                     <Typography variant='body1'>
-                                        <b>For regular reservations made through us:</b> 72 hours, or by 6 PM local time three days prior to the first night of your stay.
+                                    Guests must be at least 18 years old to book a hotel room and be able to provide proper identification upon arrival.
                                     </Typography>
-                                    <List>
-                                        <ListItem>
-                                            Room cancellations must be made at least 72 hours (7 days for hunters) prior to arrival via email (res@tetoncourt.com) or phone (307) 367-3367.
-                                        </ListItem>
-                                        <ListItem>If cancellations are requested less than 72 hours (7 days for hunters) prior to check in, the penalty is the <b>full amount</b> of your reservation.</ListItem>
-                                        <ListItem>No shows will be charged the <b>full amount</b> of your reservation.</ListItem>
-                                        <ListItem>Reservations made through third-party sites (Expedia.com, Hotels.com, Booking.com etc.) may have longer cancellation policies and those policies would apply instead. Reservations booked on those websites <b>must</b> be canceled on the website where you made your reservation.</ListItem>
-                                    </List>
-
-                                    <Typography variant='h6'>Forms of payment::</Typography>
-                                    <List>
-                                        <ListItem>
-                                            We accept the following credit cards: Visa, MasterCard, Discover and American Express.
-                                        </ListItem>
-                                        <ListItem>
-                                            You may pay cash when you check-in, but we require valid credit card information to cover incidentals.
-                                        </ListItem>
-                                        <ListItem>
-                                            We don't accept personal checks in most situations.
-                                        </ListItem>
-                                    </List>
-
-                                    <Typography variant='body1'>When making a reservation, please provide a valid credit card.</Typography>
-                                    <List>
-                                        <ListItem>
-                                            We reserve the right to charge or authorize your card up to 72 hours prior to your arrival.
-                                        </ListItem>
-                                        <ListItem>
-                                            If your card is declined, we will attempt to contact you by the phone number we have on your reservation, by email, or by messages through a third-party booking website (if you made them through that website).
-                                        </ListItem>
-                                        <ListItem>
-                                            If your card is declined and we don't get a response within a reasonable amount of time, your reservations will become non-guaranteed, which means we have the right to resell your room.
-                                        </ListItem>
-                                        <ListItem>
-                                            We normally receive last-minute guests looking for rooms; if we don't hear from you by 4 PM on the day of your planned arrival, we may sell the room.
-                                        </ListItem>
-                                    </List>
+         
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
@@ -88,40 +52,30 @@ const TermsConditions = () => {
                                     aria-controls="panel2-content"
                                     id="panel2-header"
                                 >
-                                    Pet Policies
+                                    Cancellation Policy
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography variant='body1'>
-                                        We accept pets in <b>some</b> rooms, however, we have rooms that need to remain pet-free to accommodate our guests with pet allergies.
-                                    </Typography>
+                                    
                                     <List>
                                         <ListItem>
-                                            All pets traveling with you that enter our property need to be declared in advance or upon arrival. A pet fee is required if the pet enters the room for any duration of time.
+                                            For regular reservations, 48 hours.
                                         </ListItem>
                                         <ListItem>
-                                            A separate pet fee applies for all pets (some exceptions apply). This is not included in your rate through third-party websites and is due when checking in.
+                                        For hunters: 168 hours (7 days) advance
                                         </ListItem>
                                         <ListItem>
-                                            The pet fee is $15 per pet per night (may be negotiable for multiple night stays).
+                                        Room cancellations must be made at least 48 hours prior to arrival  (7 days for hunters)  via email (info@canyonmotelcolorado.com) or phone (970)725-3395
                                         </ListItem>
                                         <ListItem>
-                                            If pets are not declared (or underdeclared), a $50 cleaning fee will be charged for each pet not delcared in advance or at check-in.
+                                        If cancellations are requested less than 48 hours (7 days for hunters)  prior to check-in, the penalty is the full amount of your reservation.
                                         </ListItem>
                                         <ListItem>
-                                            Pets must be housebroken or a separate deposit must be taken.
+                                        No shows will be charged the full amount of your reservation.
                                         </ListItem>
                                         <ListItem>
-                                            Please clean up after your pet while on our property.
+                                        Reservations made through third-party sites (Expedia.com, Hotels.com, Booking.com, etc.) must be canceled on the site where you made your reservation. The same cancellation policy applies to reservations made on those sites as reservations made on our own site.
                                         </ListItem>
-                                        <ListItem>
-                                            Pets must never be left unattended in rooms or not within your control.
-                                        </ListItem>
-                                        <ListItem>
-                                            Guests are financially responsible for their pet's (or their guest's pet's) behavior, any damage, excessive and/or exceptional cleaning charge may apply. This includes, but is not limited to: pet odors and pet stains.
-                                        </ListItem>
-                                        <ListItem>
-                                            Do not bathe your pet in the room without checking with us first, otherwise a cleaning fee may apply. In many cases, we can provide water and towels for you to clean your pet outside of the room.
-                                        </ListItem>
+                                        
                                     </List>
                                 </AccordionDetails>
                             </Accordion>
@@ -131,35 +85,22 @@ const TermsConditions = () => {
                                     aria-controls="panel3-content"
                                     id="panel3-header"
                                 >
-                                    Room Deposit and Damage Polices
+                                    All Canyon Motel rooms are non-smoking
                                 </AccordionSummary>
                                 <AccordionDetails>
-                                    <Typography variant='body1'>
-                                        <b>All Teton Court Motel rooms are non-smoking</b> of any kind, including cigarettes, cigars, marijuana, incense, and peace pipes.
-                                    </Typography>
+                                    
                                     <List>
                                         <ListItem>
-                                            Please use buckets for butts and smoke outside in areas away from other guest's room windows.
+                                        Please use buckets for butts and smoke outside  away from other guests' room windows.  
                                         </ListItem>
                                         <ListItem>
-                                            A $500 fee will be charged to your card for any evidence of smoking inside rooms.
+                                        A <b>$500</b> fee will be charged to your card for any evidence of smoking inside rooms.
                                         </ListItem>
                                         <ListItem>
-                                            No burning of candles or incense inside of the rooms.
+                                        No burning candles or incense inside of the rooms.
                                         </ListItem>
                                     </List>
-                                    <Typography variant='body1'>
-                                        <b>There is no cooking</b> (except microwaving) in rooms that don't have a kitchenette. In our kitchenette rooms, please wash all used dishes, pots and pans before your departing or <b>$25</b> "dirty dish cleaning fee" will be applied to your card.
-                                    </Typography>
-                                    <Typography variant='body1'>
-                                        <b>Room Damage/Missing Items/Excessive Cleaning:</b> If rooms are damaged or left extremely dirty during a stay, guests will be charged the amount it costs to replace damaged item <b>+ $50.00</b> /hour labor fees to return the room to its original state. This includes (but is not limited to) missing/damaged bedding, towels, windows, TVs, remote controls, fans, window screens, appliances, fixtures, furniture, doors, lights, mirrors, etc.
-                                    </Typography>
-                                    <Typography variant='body1'>
-                                        <b>Towels:</b> Please do not use towels or washcloths for makeup removal, hair dying, clean shoes/car/bike/dishes, as the stains will stay permanently. If you do, you will be charged for the cost of replacement. If needed, we do provide you free makeup removal pad and clean rags.
-                                    </Typography>
-                                    <Typography variant='body1'>
-                                        <b>Lost Keys:</b> A $20 charge per key will be assessed to the credit card on file if the room key(s) are not returned at check-out.
-                                    </Typography>
+                                    
                                 </AccordionDetails>
                             </Accordion>
                             <Accordion expanded={expanded === 'panel4'} onChange={handleChange('panel4')}>
@@ -172,46 +113,204 @@ const TermsConditions = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='body1'>
-                                        Check-in begins at: <b>4:00 PM</b>
+                                        Check-in begins at: <b>3:00 PM</b>
                                     </Typography>
                                     <Typography variant='body1'>
                                         Check-out ends at: <b>10:00 AM</b>
                                     </Typography>
-                                    <Typography variant='body1'>
-                                        Early check-in: earliest check-in will be 3:30 PM without charge, subject to advanced approval and availability.
-                                    </Typography>
+                                    
                                     <List>
                                         <ListItem>
-                                            Between 12 noon and 2 PM: $40 early check-in fee applies
+                                        Early check-in: earliest check-in will be 1:30 pm without charge, before 1:30 pm, $20 early check-in fee will be applied. Please give us a call on the morning of your arrival day.
                                         </ListItem>
                                         <ListItem>
-                                            Between 2 PM and 3:30 PM: $20 early check-in fee applies
-
+                                        Check-out, please leave room keys at drop-box beside the entrance door outside of the office. For late check-out fee will be:
+                                        <List>
+                                            <ListItem>10 am -11 am, $20</ListItem>
+                                            <ListItem>11 am -12 pm, $40</ListItem>
+                                            <ListItem>12 pm - 1 pm, $60</ListItem>
+                                            <ListItem>after 1 pm, a full night charge.</ListItem>
+                                        </List>
                                         </ListItem>
                                     </List>
-                                    <Typography variant='body1'>
-                                        Fpr check-out, please leave your room keys inside the room on the night stand or dresser or in the key drop-box (beside the entrance door outside of our office).
-                                    </Typography>
-                                    <Typography variant='body1'>
-                                        For a late check-out, the latest check-out without an additional charge will be 11 AM. After 11 AM the late check-out fee will be:
-                                    </Typography>
-                                    <List>
-                                        <ListItem>
-                                            Between 11 AM and 1 PM: $20 late check-out fee applies
-                                        </ListItem>
-                                        <ListItem>
-                                            Between 1 PM and 2 PM:  $40 late check-out fee applies
-                                        </ListItem>
-                                        <ListItem>
-                                            Between 2 PM and 3 PM:  $60 late check-out fee applies
-                                        </ListItem>
-                                        <ListItem>
-                                            After 3 pm: a full night's charge applies.
-                                        </ListItem>
-                                    </List>
+                                   
                                 </AccordionDetails>
                             </Accordion>
+                            <Accordion expanded={expanded === 'panel5'} onChange={handleChange('panel5')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                    Pets Policies
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                   
+                                    
+                                    <List>
+                                        <ListItem>
+                                            There is a <b>$20/day</b> per pet fee. 
+                                        </ListItem>
+                                        <ListItem>
+                                        Service animals and well-behaved pets are welcome.
+                                        </ListItem>
+                                        <ListItem>
+                                        Pets are permitted unless they pose a health or safety risk or are prohibited by law.
+                                        </ListItem>
+                                        <ListItem>
+                                        Pets must never be left unattended in rooms or not within your control.
+                                        </ListItem>
+                                        <ListItem>
+                                        Please clean up after your pet.
+                                        </ListItem>
+                                        <ListItem>
+                                        You are financially responsible for your pet's behavior - any damage, excessive and/or exceptional cleaning charge at Canyon Motel (This includes, but is not limited to: pet odors and pet stains).  
+                                        </ListItem>
+                                        <ListItem>Any injuries to Canyon Motel employees or motel guests caused by your pet are the responsibility of the pet owner
+Please be mindful of and minimize barking, especially early in the morning.</ListItem>
+                                    </List>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel6'} onChange={handleChange('panel6')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                    Cooking in rooms
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                   
+                                    
+                                    <List>
+                                        <ListItem>
+                                        There is <b>no cooking</b> in rooms without a kitchenette. 
+                                        </ListItem>
+                                        <ListItem>
+                                        In kitchen rooms, please wash all used dishes, pots, and pans before your departure, or a $50 “dirty dishes fee” will be applied to your card.
+                                        </ListItem>
+                                        <ListItem>
+                                        Please use the barbecue grill area at your convenience and remember to turn off the gas nozzle on the tank when finished.
 
+                                        </ListItem>
+                                        
+                                    </List>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel7'} onChange={handleChange('panel7')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Room Damage/Missing Items/Excessive Cleaning
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <List>
+                                        <ListItem>
+                                        If rooms are damaged or left extremely dirty during a stay, guests will be charged the amount it costs to replace the damaged item +$50.00 /hr labor to return the room to its original state.
+                                        </ListItem>
+                                        <ListItem>
+                                        This includes not limited to missing/damaged bedding, towels, windows, TVs, window screens, appliances, fixtures, furniture, doors, lights mirrors, etc.
+                                        </ListItem>
+                                    </List>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel8'} onChange={handleChange('panel8')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Towels
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <List>
+                                        <ListItem>
+                                        Please do not use towels/washcloths for makeup removal, hair dying, clean shoes/car/bike/dishes, as the stains will stay permanently.
+                                        </ListItem>
+                                        <ListItem>
+                                        If you do, you will be charged for the cost of replacement.
+                                        </ListItem>
+                                        <ListItem>
+                                        If needed, we do provide you free makeup removal pad, clean rags.
+                                        </ListItem>
+                                    </List>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel9'} onChange={handleChange('panel9')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Lost Keys
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>A $10 lost key charge will be assessed to the credit card on file if the room key isn't returned at check-out.</Typography>
+                                   
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel10'} onChange={handleChange('panel10')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Forms of payment
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                <List>
+                                        <ListItem>
+                                        We accept credit card Visa, MasterCard, Discover only. No AMEX.
+                                        </ListItem>
+                                        <ListItem>
+                                        You can pay cash when check-in, but we require your valid credit card information for incidentals.  Sorry, no personal checks.
+
+                                        </ListItem>
+                                        <ListItem>
+                                        We do authorize your credit card $50 upon check-in.
+                                        </ListItem>
+                                    </List>
+                                   
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel11'} onChange={handleChange('panel11')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Notice about invalid/declined cards
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>When making a reservation, please provide a valid credit card, on busy days, we will charge your card within 48 hours prior to your arrival.</Typography>
+                                   <Typography variant='body1'>
+                                   <b>If your card is declined</b>, we normally contact you by phone calls, email or messages through third-party booking websites (e.g. Booking.com).  If you don't respond within a certain time, your reservations will no longer be guaranteed.  It therefore is our option to resell the room or hold the room for you.  iDuring busy times, we get many requests for rooms, and if we don't hear from you, we will most likely resell the room.  Therfore, we ask that you provide a valid credit card to hold a room for you. 
+                                   </Typography>
+                                   
+                                </AccordionDetails>
+                            </Accordion>
+                            <Accordion expanded={expanded === 'panel12'} onChange={handleChange('panel12')}>
+                                <AccordionSummary
+                                    expandIcon={<ExpandMoreIcon />}
+                                    aria-controls="panel4-content"
+                                    id="panel4-header"
+                                >
+                                   Housekeeping
+                                </AccordionSummary>
+                                <AccordionDetails>
+                                    <Typography variant='body1'>On a multiple night stay, we will only exchange towels & refresh toiletries upon request.</Typography>
+                                  
+                                   
+                                </AccordionDetails>
+                            </Accordion>
                         </Box>
 
                     </Container>
@@ -269,7 +368,7 @@ const TermsConditions = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='body1'>
-                                        As with all of the smaller properties in town, we do not have a swimming pool. However, Pinedale has an excellent aquatic center that is open to the public and is located four blocks from the Teton Court. It offers an Olympic sized indoor pool with lap lanes, a shallow pool with slides and a lazy river, and a hot tub. It also offers a full gym, and a rock climbing wall.
+                                        As with all of the smaller properties in town, we do not have a swimming pool. However, Pinedale has an excellent aquatic center that is open to the public and is located four blocks from the Canyon. It offers an Olympic sized indoor pool with lap lanes, a shallow pool with slides and a lazy river, and a hot tub. It also offers a full gym, and a rock climbing wall.
                                     </Typography>
 
                                 </AccordionDetails>
@@ -285,7 +384,7 @@ const TermsConditions = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='body1'>
-                                        Between late May/early June and late September, the Teton Court office is open from 9 AM to 9 PM each day. We reside on the property so can arrange for arrivals after hours if necessary. Late arrivals can be arranged by calling or texting (307) 367-3367 or by emailing us in advance.
+                                        Between late May/early June and late September, the Canyon office is open from 9 AM to 9 PM each day. We reside on the property so can arrange for arrivals after hours if necessary. Late arrivals can be arranged by calling or texting (307) 367-3367 or by emailing us in advance.
                                     </Typography>
 
                                 </AccordionDetails>
@@ -384,7 +483,7 @@ const TermsConditions = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='body1'>
-                                        As with all of the smaller properties in town, we do not have a swimming pool. However, Pinedale has an excellent aquatic center that is open to the public and is located four blocks from the Teton Court. It offers an Olympic sized indoor pool with lap lanes, a shallow pool with slides and a lazy river, and a hot tub. It also offers a full gym, and a rock climbing wall.
+                                        As with all of the smaller properties in town, we do not have a swimming pool. However, Pinedale has an excellent aquatic center that is open to the public and is located four blocks from the Canyon. It offers an Olympic sized indoor pool with lap lanes, a shallow pool with slides and a lazy river, and a hot tub. It also offers a full gym, and a rock climbing wall.
                                     </Typography>
 
                                 </AccordionDetails>
@@ -400,7 +499,7 @@ const TermsConditions = () => {
                                 </AccordionSummary>
                                 <AccordionDetails>
                                     <Typography variant='body1'>
-                                        Between late May/early June and late September, the Teton Court office is open from 9 AM to 9 PM each day. We reside on the property so can arrange for arrivals after hours if necessary. Late arrivals can be arranged by calling or texting (307) 367-3367 or by emailing us in advance.
+                                        Between late May/early June and late September, the Canyon office is open from 9 AM to 9 PM each day. We reside on the property so can arrange for arrivals after hours if necessary. Late arrivals can be arranged by calling or texting (307) 367-3367 or by emailing us in advance.
                                     </Typography>
 
                                 </AccordionDetails>

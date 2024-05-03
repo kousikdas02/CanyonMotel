@@ -80,7 +80,7 @@ export const activityData = [
   },
 ]
 
-const TITLE = 'Teton Court Motel - Local Adventures';
+const TITLE = 'Canyon Motel - Local Adventures';
 const Activities = () => {
   const navigate = useNavigate();
   return (

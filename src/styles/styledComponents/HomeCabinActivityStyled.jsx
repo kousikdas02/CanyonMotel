@@ -2,7 +2,7 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 import { styled } from "@mui/material/styles";
 import { Box } from "@mui/material";
 export const HomeCabinActivityStyled = styled(Box)`
- background-color: ${primaryColors.black};
+ background-color: ${primaryColors.steelBlue};
 .homeCabinActivityCard{
     padding: 200px 30px 200px;
     position: relative;

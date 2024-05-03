@@ -4,7 +4,7 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const HomeMotelInfoWrapperStyled = styled(Box)`
 background-color: rgba(255,255,255,0.85);
-border-bottom: 5px solid ${primaryColors.black};
+border-bottom: 5px solid ${primaryColors.steelBlue};
 padding: 100px 0 50px;
 
 @media (max-width: 1199px) {

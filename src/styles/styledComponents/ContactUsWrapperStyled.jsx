@@ -5,7 +5,7 @@ import { primaryColors } from "../../mui-theme/_muiPalette";
 
 export const ContactUsWrapperStyled = styled(Box)`
 .contactUs{
-    background-color: ${primaryColors.black};
+    background-color: ${primaryColors.steelBlue};
     .contactUsForm{
         background-color: ${primaryColors.white};
         padding: 100px 100px;
@@ -72,6 +72,10 @@ export const ContactUsWrapperStyled = styled(Box)`
             }
             .contactFormSubmitBtn{
                 padding: 9px 70px;
+
+                &.Mui-disabled{
+                    color: rgba(255,255,255,0.5);
+                }
             }
         }
         
