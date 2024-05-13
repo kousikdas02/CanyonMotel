@@ -27,8 +27,8 @@ const ContactUs = () => {
 
   const form = useRef();
   const sendEmail = () => {
-    emailjs.sendForm('service_e0mka4m', 'template_c34obs1', form.current, {
-      publicKey: '-JjGidklBNNToB1iq',
+    emailjs.sendForm('service_1vrguon', 'template_e2f8fka', form.current, {
+      publicKey: 'ZZA3R9qG5CaupXiwA',
 
     })
       .then(

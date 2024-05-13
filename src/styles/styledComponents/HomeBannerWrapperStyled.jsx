@@ -1,6 +1,7 @@
 import { styled } from "@mui/material/styles";
 import {Box} from "@mui/material"
 import { primaryColors } from "../../mui-theme/_muiPalette";
+
 export const HomeBannerWrapperStyled =  styled(Box)`
 padding: 100px 0 150px;
 position: relative;
@@ -29,6 +30,7 @@ z-index: 1;
         font-weight: 400;
         margin-bottom: 10px;
         text-transform: uppercase;
+        font-family: "Rye", serif;
     }
     h2{
         color: ${primaryColors.white};
