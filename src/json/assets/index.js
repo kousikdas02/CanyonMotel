@@ -44,6 +44,7 @@ export const assets = {
     activityBg: "/assets/images/activityBg.jpg",
     contactUsBanner: "/assets/images/contactUsBanner.webp",
     termsConditionsBanner: "/assets/images/termsConditionsBanner.webp",
+    canyonBanner: "/assets/images/canyon-banner.jpg",
 
 }
 

@@ -88,7 +88,7 @@ const HomeBanner = () => {
 
     }, []);
     return (
-        <HomeBannerWrapperStyled style={{ background: `url(${assets.propertyDetails})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+        <HomeBannerWrapperStyled style={{ background: `url(${assets.canyonBanner})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
             <Container fixed>
                 {/* <Box className="homeBannerLogo">
                     <figure>
@@ -175,6 +175,7 @@ const HomeBanner = () => {
                     </form>
                     
                 </Box>
+               
             </Container>
         </HomeBannerWrapperStyled>
     )
