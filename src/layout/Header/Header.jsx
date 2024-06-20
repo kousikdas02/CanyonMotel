@@ -74,7 +74,7 @@ const Header = () => {
         ))}
       </List>
       <Box className="hamburgerBookBtn">
-        <CustomButton buttonColor='black' className="homeBannerBookBtn" onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+        <CustomButton buttonColor='black' className="homeBannerBookBtn" onClick={() => window.open('https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226', '_blank')}>
           BOOK A ROOM
         </CustomButton>
       </Box>

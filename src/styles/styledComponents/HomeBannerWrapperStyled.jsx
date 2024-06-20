@@ -25,6 +25,7 @@ z-index: 1;
 .homeBannerContent{
     text-align: center;
     z-index: 2;
+    margin-bottom: 25px;
     h1{
         color: ${primaryColors.white};
         font-weight: 400;

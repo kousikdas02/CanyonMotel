@@ -51,7 +51,7 @@ const cabinData = [
       assets.cabinImage2,
       assets.cabinImage3,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "Queen Room with Two Queen Beds",
@@ -103,7 +103,7 @@ const cabinData = [
       assets.cabinImage2,
       assets.cabinImage3,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "King Room with Spa Bath",
@@ -161,7 +161,7 @@ const cabinData = [
       assets.cabinImage2,
       assets.cabinImage3,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "Basic Queen Bed",
@@ -202,7 +202,7 @@ const cabinData = [
       assets.cabinImage2,
       assets.cabinImage3,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "King Room",
@@ -256,7 +256,7 @@ const cabinData = [
       assets.cabinImage4,
       assets.cabinImage5,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "Standard Room",
@@ -313,7 +313,7 @@ const cabinData = [
       assets.cabinImage4,
       assets.cabinImage5,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
   {
     title: "King Room with Kitchennette",
@@ -370,7 +370,7 @@ const cabinData = [
       assets.cabinImage4,
       assets.cabinImage5,
     ],
-    linkPath: "https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846",
+    linkPath: "https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226",
   },
 ]
 

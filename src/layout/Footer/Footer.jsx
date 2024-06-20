@@ -98,7 +98,7 @@ Hot Sulphur Springs, CO  80451
             <Box className="footerTopCol footerTopColPadding footerTopSocialCol">
               <Typography variant='body1' className="footerTitle">HOURS</Typography>
               <Typography variant='body1'>Our reservation and front desk team are available daily from 9am to 6pm CST.</Typography>
-              <CustomButton buttonColor='white' className='footerBookBtn' onClick={() => window.open('https://resnexus.com/resnexus/reservations/book/ACC0A5D5-05DA-442A-9B9B-A96644E4C846', '_blank')}>
+              <CustomButton buttonColor='white' className='footerBookBtn' onClick={() => window.open('https://hotels.cloudbeds.com/en/reservation/Eh6jxv?ga_sess_id=1173083113.1718897226', '_blank')}>
               BOOK A ROOM
               </CustomButton>
 
